@@ -32,6 +32,7 @@
 
     /* Utilities */
     --gap: 1rem;
+    --rds: 1.25rem;
 
 }
 
@@ -58,12 +59,16 @@ svg {
     fill: currentColor;
 }
 
-svg, img {
+svg, img, video {
     max-width: 100%;
     height: auto;
     vertical-align: middle;
     object-fit: cover;
     font-style: italic;
+}
+
+.article-card img {
+    margin: auto;
 }
 
 ul.nav-list,
@@ -87,26 +92,37 @@ li.nav-item {
 }
 
 .flag {
-    margin-right: 0.7em;
+    margin-right: 0.4em;
     width: 24px;
 }
 
+/* Pil till höger för länkar */
 a:where(.arrow-right)::after {
-    content: " \2192";
+    content: " \1F806";
     display: inline;
+    font-size: var(--fs-500);
+    vertical-align: middle;
+}
+
+.btn:hover {
+    border-color: none;
+}
+
+/* Tillgänglighet Kivra Brand Color */
+a:focus-visible,
+input:focus-visible,
+.nav-link:focus-visible,
+.btn:focus-visible,
+video:focus-visible {
+    outline: 2px solid var(--clr-bg-accent-2);
+    outline-offset: 2px;
+    box-shadow: none;
 }
 
 /* Primär knapp för brand bakgrund */
 .btn.btn-primary:where(a, button) {
     background-color: var(--clr-bg-accent-1);
-    border-color: var(--clr-bg-accent-1);
-}
-
-.btn.btn-primary:focus-visible {
-    border-color: var(--clr-brand);
-    outline: 2px solid var(--clr-brand);
-    outline-offset: 2px;
-    box-shadow: none;
+    border: none;
 }
 
 .btn.btn-primary:where(a, button):hover,
@@ -119,6 +135,7 @@ a:where(.arrow-right)::after {
 .btn.btn-secondary:where(a, button) {
     background-color: var(--clr-text-accent-1);
     color: var(--clr-bg-accent-1);
+    border: none;
 }
 
 .btn.btn-secondary:where(a, button):hover,
@@ -135,6 +152,14 @@ body {
     font-family: var(--ff-brand);
     font-size: var(--fs-400);
     font-weight: var(--fw-regular);
+}
+
+section:not(.hero-bg, .statistic-list) {
+    margin: 4rem 2rem;
+}
+
+section:last-of-type {
+    margin-bottom: 6rem;
 }
 
 h1, h2, h3 {
@@ -161,8 +186,9 @@ p {
     line-height: 1.5;
 }
 
-p.lead {
-    max-width: 53ch;
+.hero-text {
+    width: 100%;
+    max-width: 55ch;
 }
 
 .section-title {
@@ -204,6 +230,11 @@ p.lead {
     gap: var(--gap);
 }
 
+.main-nav .nav-primary .nav-item:hover {
+    text-decoration: underline var(--clr-brand) solid 3px;
+    text-underline-offset: calc(var(--gap) * 2.5);
+}
+
 .main-nav > .nav-list.nav-primary {
     margin-right: auto;
 }
@@ -223,17 +254,18 @@ p.lead {
 }
 
 .hero-content {
-    width: min(100% - calc(var(--gap) * 4), 1200px);
+    width: min(100% - calc(var(--gap) * 6), 1200px);
     margin: 0 auto;
 }
 
 .statistic-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     padding: var(--gap);
-    border-top-left-radius: 1.5rem;
-    border-top-right-radius: 1.5rem;
+    border-top-left-radius: calc(var(--rds) * 1.2);
+    border-top-right-radius: calc(var(--rds) * 1.2);
     margin-top: -2rem;
     background-color: var(--clr-text-accent-1);
 }
@@ -250,7 +282,8 @@ p.lead {
     font-size: var(--fs-700);
 }
 
-.statistic-card h2, p {
+.statistic-card h2,
+.statistic-card p {
     color: var(--clr-brand);
 }
 
@@ -258,23 +291,24 @@ p.lead {
     margin-bottom: 0;
 }
 
-.services {
-    padding: 4rem;
-}
-
 .article-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--gap);
 }
 
 .article-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--clr-text-regular);
     background-color: var(--clr-bg-regular);
     padding: calc(var(--gap) * 2);
     border-radius: 1rem;
     & a {
         color: var(--clr-text-regular);
         text-decoration: none;
+        margin-top: auto;
     }
     & a:hover, a:focus-visible {
         color: var(--clr-text-black);
@@ -293,9 +327,17 @@ p.lead {
     }
 }
 
+.kivra-video {
+    margin-bottom: 2rem;
+}
+
+.kivra-video video {
+    border-radius: var(--rds);
+}
+
 .footer {
-    border-top-left-radius: 1.25rem;
-    border-top-right-radius: 1.25rem;
+    border-top-left-radius: var(--rds);
+    border-top-right-radius: var(--rds);
     margin-top: -2rem;
 }
 
@@ -309,4 +351,26 @@ p.lead {
 
 address {
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 900px) {
+    .hero-content {
+        width: min(100% - calc(var(--gap) * 2), 1200px);
+        margin: 0 auto;
+    }
+
+    .hero-bg {
+        background-image: url(../assets/image/dog-hero-background_002.webp);
+    }
+    
+    .hero-text {
+        max-width: 40ch;
+        & h1 {
+            font-size: var(--fs-800);
+        }
+    }
+
+    section:not(.hero-bg, .statistic-list) {
+        margin: 4rem 1rem;
+    }
 }
