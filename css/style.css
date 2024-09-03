@@ -96,6 +96,18 @@ li.nav-item {
     width: 24px;
 }
 
+form {
+    display: inline-block;
+}
+
+.input-group {
+    position: initial;
+}
+
+.input-group .btn {
+    z-index: -2;
+}
+
 /* Pil till höger för länkar */
 a:where(.arrow-right)::after {
     content: " \1F806";
