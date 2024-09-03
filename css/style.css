@@ -1,0 +1,312 @@
+:root {
+    /* Color */
+    --clr-brand: hsl(125, 100%, 9%);
+    --clr-text-regular: hsl(40, 10%, 12%);
+    --clr-text-black: hsl(0, 0%, 0%);
+    --clr-text-accent-1: hsl(90, 67%, 93%);
+
+
+    --clr-bg-regular: hsl(36, 26%, 96%);
+    --clr-bg-accent-1: hsl(109, 100%, 25%);
+    --clr-bg-accent-2: hsl(109, 100%, 23%);
+
+    --clr-text-special-1: hsl(251, 94%, 19%);
+    --clr-bg-special-1: hsl(234, 100%, 87%);
+
+    /* Fonts */
+    --ff-brand: 'Signika', sans-serif;
+    
+    --fs-300: 0.9375rem;
+    --fs-400: 1.0625rem;
+    --fs-500: 1.25rem;
+    --fs-600: 1.375rem;
+    --fs-700: 2rem;
+    --fs-800: 3rem;
+    --fs-900: 4rem;
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    /* Utilities */
+    --gap: 1rem;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+      scroll-behavior: smooth;
+    }
+  }
+
+/* * {
+    outline: 1px solid limegreen;
+} */
+
+*,*::after, *::before {
+    box-sizing: border-box;
+}
+
+svg {
+    fill: currentColor;
+}
+
+svg, img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    object-fit: cover;
+    font-style: italic;
+}
+
+ul.nav-list,
+li.nav-item {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.brand-logo {
+    color: var(--clr-bg-accent-1);
+}
+
+.bankid-white, .bankid-green {
+    margin-right: 0.7em;
+    width: 24px;
+}
+
+.bankid-green {
+    color: var(--clr-bg-accent-1);
+}
+
+.flag {
+    margin-right: 0.7em;
+    width: 24px;
+}
+
+a:where(.arrow-right)::after {
+    content: " \2192";
+    display: inline;
+}
+
+/* Primär knapp för brand bakgrund */
+.btn.btn-primary:where(a, button) {
+    background-color: var(--clr-bg-accent-1);
+    border-color: var(--clr-bg-accent-1);
+}
+
+.btn.btn-primary:focus-visible {
+    border-color: var(--clr-brand);
+    outline: 2px solid var(--clr-brand);
+    outline-offset: 2px;
+    box-shadow: none;
+}
+
+.btn.btn-primary:where(a, button):hover,
+.btn.btn-primary:where(a, button):focus-visible {
+    background-color: var(--clr-bg-accent-2);
+    color: var(--clr-text-accent-1);
+}
+
+/* Sekundär knapp för ljusgrön bakgrund */
+.btn.btn-secondary:where(a, button) {
+    background-color: var(--clr-text-accent-1);
+    color: var(--clr-bg-accent-1);
+}
+
+.btn.btn-secondary:where(a, button):hover,
+.btn.btn-secondary:where(a, button):focus-visible {
+    background-color: var(--clr-text-accent-1);
+    color: var(--clr-bg-accent-1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--ff-brand);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-regular);
+}
+
+h1, h2, h3 {
+    text-wrap: balance;
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: var(--fs-900);
+    font-weight: var(--fw-bold);
+    color: var(--clr-brand);
+    max-width: 20ch;
+}
+
+h2 {
+    font-size: var(--fs-800);
+}
+
+h3 {
+    font-size: var(--fs-600);
+}
+
+p {
+    line-height: 1.5;
+}
+
+p.lead {
+    max-width: 53ch;
+}
+
+.section-title {
+    text-align: center;
+    max-width: 40ch;
+    margin: 0 auto;
+}
+
+.nav-header {
+    position: sticky;
+    top: 0;
+}
+
+.top-nav, .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: calc(var(--gap) * 2);
+}
+
+.top-nav {
+    padding: 0.75rem 2rem;
+}
+
+.top-nav, .footer {
+    background-color: var(--clr-brand);
+    color: var(--clr-text-accent-1);
+}
+
+.main-nav {
+    background-color: var(--clr-bg-regular);
+    padding: 1.75rem 2rem;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.main-nav > .nav-list.nav-primary {
+    margin-right: auto;
+}
+
+.wrapper {
+    width: min(100% - calc(var(--gap) * 2), 1200px);
+    margin: 0 auto;
+}
+
+.hero-bg {
+    background-image: url(../assets/image/dog-hero-background_003.webp);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    align-content: center;
+    min-height: 80svh;
+}
+
+.hero-content {
+    width: min(100% - calc(var(--gap) * 4), 1200px);
+    margin: 0 auto;
+}
+
+.statistic-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: var(--gap);
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    margin-top: -2rem;
+    background-color: var(--clr-text-accent-1);
+}
+
+.statistic-list > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.statistic-card h2 {
+    font-size: var(--fs-700);
+}
+
+.statistic-card h2, p {
+    color: var(--clr-brand);
+}
+
+.statistic-card p {
+    margin-bottom: 0;
+}
+
+.services {
+    padding: 4rem;
+}
+
+.article-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--gap);
+}
+
+.article-card {
+    background-color: var(--clr-bg-regular);
+    padding: calc(var(--gap) * 2);
+    border-radius: 1rem;
+    & a {
+        color: var(--clr-text-regular);
+        text-decoration: none;
+    }
+    & a:hover, a:focus-visible {
+        color: var(--clr-text-black);
+        text-decoration: underline;
+        text-underline-offset: calc(var(--gap) / 2);
+    }
+}
+
+.article-card:last-child {
+    background-color: var(--clr-bg-accent-1);
+    & h3, p {
+        color: var(--clr-text-accent-1);
+    }
+    & a:hover, a:focus-visible {
+        text-decoration: none;
+    }
+}
+
+.footer {
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+    margin-top: -2rem;
+}
+
+.org-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+address {
+    margin-bottom: 0;
+}
