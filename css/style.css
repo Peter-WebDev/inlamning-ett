@@ -108,19 +108,33 @@ form {
     z-index: -2;
 }
 
-/* Pil till höger för länkar */
-a:where(.arrow-right)::after {
-    content: " \1F806";
+/* Pil till höger för textlänkar */
+a.arrow-right::after {
+    content: ' \1F806';
     display: inline;
     font-size: var(--fs-500);
     vertical-align: middle;
 }
 
-.btn:hover {
-    border-color: none;
+/* Chevron till höger för Primary */
+.chevron::after {
+    content: url("data:image/svg+xml,%3Csvg viewBox='0 0 600 600' class='chevron' xmlns='http://www.w3.org/2000/svg'%3E%3Cline stroke='currentColor' stroke-width='60' x1='80' x2='320' y1='80' y2='320' stroke-linecap='round' /%3E%3Cline stroke='currentColor' stroke-width='60' x1='560' x2='320' y1='80' y2='320' stroke-linecap='round' /%3E%3C/svg%3E");
+    display: inline-block;
+    width: 10px;
+    stroke-width: 60px;
+    margin-left: calc(var(--gap) / 3);
 }
 
-/* Tillgänglighet Kivra Brand Color */
+.main-nav .nav-primary .nav-item:hover {
+    text-decoration: underline var(--clr-brand) solid 3px;
+    text-underline-offset: calc(var(--gap) * 2.35);
+}
+
+.btn:hover {
+    border-color:unset;
+}
+
+/* Tillgänglighet Kivra Brand Color Overwrite Bootstrap */
 a:focus-visible,
 input:focus-visible,
 .nav-link:focus-visible,
@@ -129,6 +143,11 @@ video:focus-visible {
     outline: 2px solid var(--clr-bg-accent-2);
     outline-offset: 2px;
     box-shadow: none;
+}
+
+.btn.btn-secondary:focus-visible {
+    outline: 2px solid var(--clr-brand);
+    outline-offset: 2px;
 }
 
 /* Primär knapp för brand bakgrund */
@@ -198,6 +217,11 @@ p {
     line-height: 1.5;
 }
 
+p.lead {
+    font-size: var(--fs-500);
+    font-weight: var(--fw-regular);
+}
+
 .hero-text {
     width: 100%;
     max-width: 55ch;
@@ -242,17 +266,12 @@ p {
     gap: var(--gap);
 }
 
-.main-nav .nav-primary .nav-item:hover {
-    text-decoration: underline var(--clr-brand) solid 3px;
-    text-underline-offset: calc(var(--gap) * 2.5);
-}
-
 .main-nav > .nav-list.nav-primary {
     margin-right: auto;
 }
 
 .wrapper {
-    width: min(100% - calc(var(--gap) * 2), 1200px);
+    width: min(100% - calc(var(--gap) * 4), 1200px);
     margin: 0 auto;
 }
 
@@ -317,26 +336,33 @@ p {
     background-color: var(--clr-bg-regular);
     padding: calc(var(--gap) * 2);
     border-radius: 1rem;
-    & a {
-        color: var(--clr-text-regular);
-        text-decoration: none;
-        margin-top: auto;
-    }
-    & a:hover, a:focus-visible {
-        color: var(--clr-text-black);
-        text-decoration: underline;
-        text-underline-offset: calc(var(--gap) / 2);
-    }
+}
+
+.article-card a {
+    color: var(--clr-text-regular);
+    text-decoration: none;
+    margin-top: auto;
+}
+
+.article-card a:hover,
+.article-card a:focus-visible {
+    color: var(--clr-text-black);
+    text-decoration: underline;
+    text-underline-offset: calc(var(--gap) / 2);
 }
 
 .article-card:last-child {
     background-color: var(--clr-bg-accent-1);
-    & h3, p {
-        color: var(--clr-text-accent-1);
-    }
-    & a:hover, a:focus-visible {
-        text-decoration: none;
-    }
+}
+
+.article-card:last-child h3,
+.article-card:last-child p {
+    color: var(--clr-text-accent-1);
+}
+
+.article-card:last-child a:hover,
+.article-card:last-child a:focus-visible {
+    text-decoration: none;
 }
 
 .kivra-video {
@@ -351,6 +377,7 @@ p {
     border-top-left-radius: var(--rds);
     border-top-right-radius: var(--rds);
     margin-top: -2rem;
+
 }
 
 .org-info {
@@ -377,9 +404,10 @@ address {
     
     .hero-text {
         max-width: 40ch;
-        & h1 {
-            font-size: var(--fs-800);
-        }
+    }
+
+    .hero-text h1 {
+        font-size: var(--fs-800);
     }
 
     section:not(.hero-bg, .statistic-list) {
