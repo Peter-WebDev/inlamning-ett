@@ -79,11 +79,7 @@ li.nav-item {
     margin: 0;
 }
 
-/* Ta bort Bootstrap border-color on hover */
-.btn:hover {
-    border-color:unset;
-}
-
+/* SVGs */
 .brand-logo {
     color: var(--clr-bg-accent-1);
 }
@@ -102,8 +98,17 @@ li.nav-item {
     width: 24px;
 }
 
+/* Diverse resets inklusive Bootstrap border-color on hover */
+.btn:hover {
+    border-color:unset;
+}
+
 form {
     display: inline-block;
+}
+
+.kivra-video video {
+    border-radius: var(--rds);
 }
 
 .input-group {
@@ -115,6 +120,11 @@ form {
     z-index: -1;
 }
 
+address {
+    margin-bottom: 0;
+}
+
+/* Font inställingar */
 h1, h2, h3 {
     text-wrap: balance;
     line-height: 1.1;
@@ -163,6 +173,7 @@ p.lead {
     margin: 0 auto;
 }
 
+/* Nav inställingar */
 .nav-header {
     position: sticky;
     top: 0;
@@ -247,7 +258,7 @@ video:focus-visible {
     border-radius: 0.125rem;
 }
 
-/* Primär Sekundär knapp */
+/* Knappar */
 .btn.btn-primary:where(a, button),
 .btn.btn-secondary:where(a, button) {
     font-size: var(--fs-400);
@@ -278,6 +289,7 @@ video:focus-visible {
     color: var(--clr-bg-accent-2);
 }
 
+/* Layout inställningar */
 section:not(.hero-bg, .statistic-list) {
     padding: 4rem 2rem;
 }
@@ -378,14 +390,7 @@ section:not(.hero-bg, .statistic-list) {
     text-decoration: none;
 }
 
-.kivra-video {
-    margin-bottom: 2rem;
-}
-
-.kivra-video video {
-    border-radius: var(--rds);
-}
-
+/* Footer inställningar */
 .footer {
     border-top-left-radius: var(--rds);
     border-top-right-radius: var(--rds);
@@ -411,8 +416,4 @@ section:not(.hero-bg, .statistic-list) {
 
 .footer-nav .nav-list .nav-item:first-of-type {
     font-size: var(--fs-600);
-}
-
-address {
-    margin-bottom: 0;
 }
