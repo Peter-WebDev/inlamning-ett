@@ -3,7 +3,7 @@ WEBVTT
 video::cue {
   font-size: 1.5rem;
   background-image: linear-gradient(to bottom, yellow, lightyellow);
-  color: red;
+  color: black;
 }
 
 1
