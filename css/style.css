@@ -7,7 +7,7 @@
 
 
     --clr-bg-regular: hsl(36, 26%, 96%);
-    --clr-bg-accent-1: hsl(92, 63%, 48%);
+    --clr-bg-accent-1: rgb(117, 200, 45);
     --clr-bg-accent-2: hsl(109, 100%, 25%);
     --clr-bg-accent-3: hsl(109, 100%, 23%);
 
@@ -15,6 +15,7 @@
     --ff-brand: "Inter", sans-serif;
 
     /* --fs-300: 0.9375rem; */
+    --fs-300: 0.9375rem;
     --fs-400: 1.0625rem;
     --fs-500: 1.25rem;
     --fs-600: 1.375rem;
@@ -258,12 +259,17 @@ video:focus-visible {
     border-radius: 0.125rem;
 }
 
-/* Knappar */
+/* Button */
 .btn.btn-primary:where(a, button),
 .btn.btn-secondary:where(a, button) {
     font-size: var(--fs-400);
     font-weight: var(--fw-semibold);
     border: none;
+}
+
+.btn.btn-outline-dark:where(a, button) {
+    font-size: var(--fs-300);
+    font-weight: var(--fw-semibold);
 }
 
 /* Primär knapp för brand bakgrund */
