@@ -1,279 +1,437 @@
 <!DOCTYPE html>
 <html lang="sv">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Hälften av alla vuxna har Kivra. Och tar emot digital post från tiotusentals anslutna företag och myndigheter. Skaffa Kivra, för privatanvändare och företag.">
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description"
+    content="Hälften av alla vuxna har Kivra. Och tar emot digital post från tiotusentals anslutna företag och myndigheter. Skaffa Kivra, för privatanvändare och företag." />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="manifest" href="/site.webmanifest" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" as="style" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">    
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" media="print" onload="this.media='all'">
-    <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
-    </noscript>
-    
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Hem | Kivra Privat</title>
-    <body>
-        <header class="nav-header">
-            <nav class="top-nav" aria-label="Top">
-                <ul class="nav-list nav-primary">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Privat</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">För företag</a>
-                    </li>
-                </ul>
-                <ul class="nav-list nav-secondary">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Om Kivra</a>
-                    </li>
-                    <li class="nav-item">
-                        <button class="nav-link">
-                            <svg class="flag" width="64" height="40" viewBox="0 0 64 40" fill="none"><g><path d="M0 0H64V40.1075H0V0Z" fill="#000066"></path><path d="M0 8.68201L62.9658 40H64V31.6558L0.573256 0H0V8.68201ZM64 8.43991L0.573256 40H0V31.4255L62.9658 0H64V8.43991Z" fill="white"></path><path d="M25.0728 0V40H38.4663V0H25.0728ZM-2.38419e-07 13.3692V26.7383H64V13.3692H-2.38419e-07Z" fill="white"></path><path d="M0 16.043V24.0645H64V16.043H0ZM27.7515 0V40H35.7875V0H27.7515ZM0 35.9096L18.376 26.7383H24.3656L0 38.8989V35.9096ZM0 4.19789L18.376 13.3692H12.3864L0 7.18734V4.19789ZM39.1735 13.3692L64 0.978485V3.96784L45.1631 13.3692H39.1735ZM64 36.1396L45.1631 26.7383H51.1527L64 33.1502V36.1396Z" fill="#CC0000"></path></g><defs><clipPath><rect width="64" height="40" fill="white"></rect></clipPath></defs></svg>
-                            <span>English</span>
-                        </button>
-                    </li>
-                </ul>
-            </nav>
-            <nav class="main-nav" aria-label="Main">
-                <a href="#">
-                    <svg role="img" aria-label="Home" class="brand-logo" width="125" height="33" viewBox="0 0 125 33" fill="none"><g><path d="M18.31 21.4787L14.67 13.6297L26.2 0.554565H18.96L5.995 15.5782V0.554565H0V32.8201H5.995V23.4772L10.46 18.416L13.24 24.3815C15.64 29.4976 18.915 33 24.08 33C24.91 33 25.925 32.9101 26.665 32.7252V27.5641C26.665 27.5641 26.02 27.704 25.145 27.704C21.865 27.699 20.25 25.6705 18.31 21.4787Z" fill="currentColor"></path><path d="M53.135 27.0895C49.165 18.6608 46.37 9.77259 44.74 0.554565H38.745C40.545 11.7561 44.37 22.9526 49.725 32.8201H56.505C61.58 23.9718 65.82 11.4363 67.53 0.554565H61.58C59.95 9.77259 57.11 18.6608 53.135 27.0895Z" fill="currentColor"></path><path d="M35.56 0.554565H29.565V32.8201H35.56V0.554565Z" fill="currentColor"></path><path d="M125 32.8151C123.11 21.9833 119.19 10.3222 113.745 0.549561H107.055C101.61 10.3222 97.645 21.9833 95.755 32.8151H101.75C102.14 30.397 102.63 27.9338 103.215 25.4657C104.995 25.8654 107.3 26.1302 110.375 26.1302C113.405 26.1302 115.745 25.8604 117.535 25.4657C118.125 27.9338 118.61 30.392 119 32.8151H125ZM110.38 20.7393C107.945 20.7393 105.89 20.4845 104.63 20.2197C106.1 15.2934 108 10.4221 110.38 5.86052C112.76 10.4221 114.66 15.2934 116.13 20.2197C114.87 20.4845 112.815 20.7393 110.38 20.7393Z" fill="currentColor"></path><path d="M86.63 20.8043C90.9 19.4503 93.77 15.863 93.77 11.1066C93.775 4.65647 88.605 0 81.735 0C74.955 0 69.28 4.51658 69.28 12.2607V32.8152H75.275V12.7204C75.275 8.24875 78.045 5.5758 81.735 5.5758C85.24 5.5758 87.685 7.97395 87.685 11.4313C87.685 15.2584 84.735 18.1612 78.135 18.1612V21.7085C83.44 22.9526 87.175 27.5641 87.775 32.8152H94C93.505 27.6841 90.28 22.7828 86.63 20.8043Z" fill="currentColor"></path></g><defs><clipPath><rect width="125" height="33" fill="white"></rect></clipPath></defs></svg>
-                </a>
-                <ul class="nav-list nav-primary">
-                    <li class="nav-item">
-                        <a class="nav-link chevron" href="#funkar">Så funkar det</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link chevron" href="#tjanster">Våra tjänster</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link chevron" href="#">Hjälp</a>
-                    </li>
-                </ul>
-                <ul class="nav-list nav-secondary">
-                    <li class="nav-item">
-                        <a class="btn btn-outline-dark btn-lg" href="#">Logga in</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section class="hero-bg">
-                <header class="hero-content">
-                        <div class="hero-text">
-                            <h1>För dig som älskar att samla</h1>
-                            <p class="lead">Ett papper här, ett kvitto där. Känner du igen dig? Vi har en bättre idé. Tänk dig brev, räkningar, kvitton, uppladdningar och andra viktigheter – allt i samma app. Helt gratis, såklart. Smart, säkert och snällt mot miljön!</p>
-                        </div>
-                        <a class="btn btn-primary btn-lg" href="#"><svg role="img" aria-label="BankID" width="24" height="24" version="1.1" x="0px" y="0px" viewBox="0 0 320.6 305.3" style="enable-background:new 0 0 320.6 305.3" class="bankid-white" xml:space="preserve"><g><path d="M102.3,160.2L115.5,77c-5.2,0-14.1,0-14.1,0c-6.6,0-15.1-3.7-17.6-10.5C83,64.2,81.1,56.3,92,48.6c3.9-2.7,6.4-5.7,6.9-8
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preconnect" as="style"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" />
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    media="print" onload="this.media='all'" />
+
+<link rel="stylesheet" href="/css/style.css" />
+<title>Hem | Kivra Privat</title>
+
+<body class="body">
+    <header class="nav-header">
+        <nav class="top-nav" aria-label="Topp">
+            <ul class="nav-list nav-primary">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Privat</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">För företag</a>
+                </li>
+            </ul>
+            <ul class="nav-list nav-secondary">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Om Kivra</a>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link">
+                        <svg class="flag" aria-label="Språk" width="64" height="40" viewBox="0 0 64 40" fill="none">
+                            <g>
+                                <path d="M0 0H64V40.1075H0V0Z" fill="#000066"></path>
+                                <path
+                                    d="M0 8.68201L62.9658 40H64V31.6558L0.573256 0H0V8.68201ZM64 8.43991L0.573256 40H0V31.4255L62.9658 0H64V8.43991Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M25.0728 0V40H38.4663V0H25.0728ZM-2.38419e-07 13.3692V26.7383H64V13.3692H-2.38419e-07Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M0 16.043V24.0645H64V16.043H0ZM27.7515 0V40H35.7875V0H27.7515ZM0 35.9096L18.376 26.7383H24.3656L0 38.8989V35.9096ZM0 4.19789L18.376 13.3692H12.3864L0 7.18734V4.19789ZM39.1735 13.3692L64 0.978485V3.96784L45.1631 13.3692H39.1735ZM64 36.1396L45.1631 26.7383H51.1527L64 33.1502V36.1396Z"
+                                    fill="#CC0000"></path>
+                            </g>
+                            <defs>
+                                <clipPath>
+                                    <rect width="64" height="40" fill="white"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <span>English</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <nav class="main-nav" aria-label="Huvud">
+            <a href="#" title="Hem"><svg role="img" class="brand-logo" width="125" height="33" viewBox="0 0 125 33"
+                    fill="none">
+                    <g>
+                        <path d="M18.31 21.4787L14.67 13.6297L26.2 0.554565H18.96L5.995 15.5782V0.554565H0V32.8201H5.995V23.4772L10.46 18.416L13.24 24.3815C15.64 29.4976 18.915 33 24.08 33C24.91 33 25.925 32.9101 26.665 32.7252V27.5641C26.665 27.5641 26.02 27.704 25.145 27.704C21.865 27.699 20.25 25.6705 18.31 21.4787Z"
+                            fill="currentColor"></path>
+                        <path
+                            d="M53.135 27.0895C49.165 18.6608 46.37 9.77259 44.74 0.554565H38.745C40.545 11.7561 44.37 22.9526 49.725 32.8201H56.505C61.58 23.9718 65.82 11.4363 67.53 0.554565H61.58C59.95 9.77259 57.11 18.6608 53.135 27.0895Z"
+                            fill="currentColor"></path>
+                        <path d="M35.56 0.554565H29.565V32.8201H35.56V0.554565Z" fill="currentColor"></path>
+                        <path
+                            d="M125 32.8151C123.11 21.9833 119.19 10.3222 113.745 0.549561H107.055C101.61 10.3222 97.645 21.9833 95.755 32.8151H101.75C102.14 30.397 102.63 27.9338 103.215 25.4657C104.995 25.8654 107.3 26.1302 110.375 26.1302C113.405 26.1302 115.745 25.8604 117.535 25.4657C118.125 27.9338 118.61 30.392 119 32.8151H125ZM110.38 20.7393C107.945 20.7393 105.89 20.4845 104.63 20.2197C106.1 15.2934 108 10.4221 110.38 5.86052C112.76 10.4221 114.66 15.2934 116.13 20.2197C114.87 20.4845 112.815 20.7393 110.38 20.7393Z"
+                            fill="currentColor"></path>
+                        <path
+                            d="M86.63 20.8043C90.9 19.4503 93.77 15.863 93.77 11.1066C93.775 4.65647 88.605 0 81.735 0C74.955 0 69.28 4.51658 69.28 12.2607V32.8152H75.275V12.7204C75.275 8.24875 78.045 5.5758 81.735 5.5758C85.24 5.5758 87.685 7.97395 87.685 11.4313C87.685 15.2584 84.735 18.1612 78.135 18.1612V21.7085C83.44 22.9526 87.175 27.5641 87.775 32.8152H94C93.505 27.6841 90.28 22.7828 86.63 20.8043Z"
+                            fill="currentColor"></path>
+                    </g>
+                    <defs>
+                        <clipPath>
+                            <rect width="125" height="33" fill="white"></rect>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </a>
+            <ul class="nav-list nav-primary">
+                <li class="nav-item">
+                    <a class="nav-link chevron" href="#funkar">Så funkar det</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link chevron" href="#tjanster">Våra tjänster</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link chevron" href="#">Hjälp</a>
+                </li>
+            </ul>
+            <ul class="nav-list nav-secondary">
+                <li class="nav-item">
+                    <a class="btn btn-outline-dark" href="#"><span>Logga in</span></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-bg">
+            <header class="hero-content">
+                <div class="hero-text">
+                    <h1>För dig som älskar att samla</h1>
+                    <p class="lead">
+                        Ett papper här, ett kvitto där. Känner du igen dig? Vi har en
+                        bättre idé. Tänk dig brev, räkningar, kvitton, uppladdningar och
+                        andra viktigheter &dash; allt i samma app. Helt gratis, såklart. Smart,
+                        säkert och snällt mot miljön!
+                    </p>
+                </div>
+                <a class="btn btn-primary btn-lg" href="#"><svg role="img" width="24" height="24"
+                        version="1.1" x="0px" y="0px" viewBox="0 0 320.6 305.3"
+                        style="enable-background: new 0 0 320.6 305.3" class="bankid-white" xml:space="preserve">
+                        <g>
+                            <path d="M102.3,160.2L115.5,77c-5.2,0-14.1,0-14.1,0c-6.6,0-15.1-3.7-17.6-10.5C83,64.2,81.1,56.3,92,48.6c3.9-2.7,6.4-5.7,6.9-8
                             c0.5-2.4-0.1-4.5-1.8-6.1c-2.4-2.3-7.1-3.6-13.1-3.6c-10.1,0-17.2,5.8-17.9,10c-0.5,3.1,1.9,5.6,4,7.2c6.3,4.7,7.8,11.5,3.9,17.9
                             c-4,6.6-12.7,10.9-22,11c0,0-9.2,0-14.4,0c-1.2,8.1-20.8,132.3-22.3,142.1h78.1c0.7-4.4,4.3-27.9,9.2-58.9L102.3,160.2L102.3,160.2
-                            z"></path><path d="M206.9,4.2h-79.5l-10.6,67.3h13.5c7.4,0,14.4-3.4,17.4-8.3c1-1.6,1.4-3,1.4-4.3c0-2.8-1.9-4.9-3.8-6.3
+                            z"></path>
+                            <path
+                                d="M206.9,4.2h-79.5l-10.6,67.3h13.5c7.4,0,14.4-3.4,17.4-8.3c1-1.6,1.4-3,1.4-4.3c0-2.8-1.9-4.9-3.8-6.3
                             c-5.2-3.9-6.3-8-6.3-10.9c0-0.6,0-1.1,0.1-1.6c1.1-7.1,10.7-14.8,23.4-14.8c7.6,0,13.4,1.8,16.9,5.1c3.1,2.9,4.3,7,3.4,11.3
                             c-1.1,5.1-6.2,9.3-9.1,11.4c-7.7,5.4-6.7,10.1-6.2,11.5c1.6,4.2,7.7,6.9,12.4,6.9h20.5c0,0,0,0,0,0.1c28,0.2,43,13.1,38.3,43.1
-                            c-4.4,27.9-25.8,39.9-51.3,40.1l-10.1,64.4h14.9c62.9,0,114.3-40.4,124.4-104.2C329.1,35.8,278.9,4.2,206.9,4.2z"></path><path d="M206.9,4.2h-79.5l-10.6,67.3h13.5c7.4,0,14.4-3.4,17.4-8.3c1-1.6,1.4-3,1.4-4.3c0-2.8-1.9-4.9-3.8-6.3
+                            c-4.4,27.9-25.8,39.9-51.3,40.1l-10.1,64.4h14.9c62.9,0,114.3-40.4,124.4-104.2C329.1,35.8,278.9,4.2,206.9,4.2z">
+                            </path>
+                            <path
+                                d="M206.9,4.2h-79.5l-10.6,67.3h13.5c7.4,0,14.4-3.4,17.4-8.3c1-1.6,1.4-3,1.4-4.3c0-2.8-1.9-4.9-3.8-6.3
                             c-5.2-3.9-6.3-8-6.3-10.9c0-0.6,0-1.1,0.1-1.6c1.1-7.1,10.7-14.8,23.4-14.8c7.6,0,13.4,1.8,16.9,5.1c3.1,2.9,4.3,7,3.4,11.3
                             c-1.1,5.1-6.2,9.3-9.1,11.4c-7.7,5.4-6.7,10.1-6.2,11.5c1.6,4.2,7.7,6.9,12.4,6.9h20.5c0,0,0,0,0,0.1c28,0.2,43,13.1,38.3,43.1
-                            c-4.4,27.9-25.8,39.9-51.3,40.1l-10.1,64.4h14.9c62.9,0,114.3-40.4,124.4-104.2C329.1,35.8,278.9,4.2,206.9,4.2z"></path><g><path d="M11.1,247.8H43c13.6,0,16.9,6.9,15.9,13.2c-0.8,5.1-4.3,8.9-10.3,11.4c7.6,2.9,10.6,7.4,9.5,14.5
+                            c-4.4,27.9-25.8,39.9-51.3,40.1l-10.1,64.4h14.9c62.9,0,114.3-40.4,124.4-104.2C329.1,35.8,278.9,4.2,206.9,4.2z">
+                            </path>
+                            <g>
+                                <path
+                                    d="M11.1,247.8H43c13.6,0,16.9,6.9,15.9,13.2c-0.8,5.1-4.3,8.9-10.3,11.4c7.6,2.9,10.6,7.4,9.5,14.5
                                 c-1.4,8.9-9.1,15.5-19.2,15.5H2.6L11.1,247.8z M32.2,270.4c6.2,0,9.1-3.3,9.7-7.2c0.6-4.2-1.3-7.1-7.5-7.1h-5.5l-2.2,14.3H32.2z
-                                 M28.8,294c6.4,0,10.1-2.6,11-7.9c0.7-4.6-1.9-7.3-8.1-7.3h-6.3L23,294.1L28.8,294L28.8,294z"></path><path d="M102.8,302.8c-8.3,0.6-12.3-0.3-14.3-3.9c-4.4,2.7-9.3,4.1-14.5,4.1c-9.4,0-12.7-4.9-11.8-10.3c0.4-2.6,1.9-5.1,4.3-7.2
+                                 M28.8,294c6.4,0,10.1-2.6,11-7.9c0.7-4.6-1.9-7.3-8.1-7.3h-6.3L23,294.1L28.8,294L28.8,294z">
+                                </path>
+                                <path d="M102.8,302.8c-8.3,0.6-12.3-0.3-14.3-3.9c-4.4,2.7-9.3,4.1-14.5,4.1c-9.4,0-12.7-4.9-11.8-10.3c0.4-2.6,1.9-5.1,4.3-7.2
                                 c5.2-4.5,18-5.1,23-8.5c0.4-3.8-1.1-5.2-5.8-5.2c-5.5,0-10.1,1.8-18,7.2l1.9-12.4c6.8-4.9,13.4-7.2,21-7.2c9.7,0,18.3,4,16.7,14.6
                                 l-1.9,12c-0.7,4.2-0.5,5.5,4.2,5.6L102.8,302.8z M88.4,284c-4.4,2.8-12.6,2.3-13.5,8.1c-0.4,2.7,1.3,4.7,4,4.7
-                                c2.6,0,5.8-1.1,8.4-2.9c-0.2-1-0.1-2,0.2-3.9L88.4,284z"></path><path d="M118.3,260.1h16.6l-0.9,5.5c5.3-4.5,9.3-6.2,14.5-6.2c9.3,0,13.6,5.7,12.1,15l-4.3,27.9h-16.6l3.6-23.1
-                                c0.7-4.2-0.6-6.2-3.8-6.2c-2.6,0-5,1.4-7.3,4.5l-3.8,24.7h-16.6L118.3,260.1z"></path><path d="M173.5,247.8h16.6l-4.2,26.8l15.9-14.5h20.5l-20.4,18l16.4,24.2h-20.9l-12.6-19.5h-0.2l-3,19.5H165L173.5,247.8z"></path></g><g><path d="M232.3,247.8h19.1l-8.4,54.5h-19.1L232.3,247.8z"></path><path d="M260.7,247.8H288c21.1,0,27.2,15.3,25.2,28c-1.9,12.4-11.7,26.5-30.2,26.5h-30.8L260.7,247.8z M278.4,289.3
-                                c9.3,0,14.4-4.6,15.9-14.3c1.1-7.2-1.1-14.3-11.4-14.3h-5.1l-4.4,28.6H278.4z"></path></g></g></svg><span>Skapa konto</span></a>
-                </header>
-            </section>
-            <section class="statistic-list" tabindex="-1">
-                <div class="statistic-card">
-                    <span class="user-count">5 999 703</span>
-                    <p>Användare</p>
+                                c2.6,0,5.8-1.1,8.4-2.9c-0.2-1-0.1-2,0.2-3.9L88.4,284z"></path>
+                                <path d="M118.3,260.1h16.6l-0.9,5.5c5.3-4.5,9.3-6.2,14.5-6.2c9.3,0,13.6,5.7,12.1,15l-4.3,27.9h-16.6l3.6-23.1
+                                c0.7-4.2-0.6-6.2-3.8-6.2c-2.6,0-5,1.4-7.3,4.5l-3.8,24.7h-16.6L118.3,260.1z"></path>
+                                <path
+                                    d="M173.5,247.8h16.6l-4.2,26.8l15.9-14.5h20.5l-20.4,18l16.4,24.2h-20.9l-12.6-19.5h-0.2l-3,19.5H165L173.5,247.8z">
+                                </path>
+                            </g>
+                            <g>
+                                <path d="M232.3,247.8h19.1l-8.4,54.5h-19.1L232.3,247.8z"></path>
+                                <path d="M260.7,247.8H288c21.1,0,27.2,15.3,25.2,28c-1.9,12.4-11.7,26.5-30.2,26.5h-30.8L260.7,247.8z M278.4,289.3
+                                c9.3,0,14.4-4.6,15.9-14.3c1.1-7.2-1.1-14.3-11.4-14.3h-5.1l-4.4,28.6H278.4z"></path>
+                            </g>
+                        </g>
+                    </svg><span>Skapa konto</span></a>
+            </header>
+        </section>
+        <div class="statistic-list" tabindex="-1">
+            <div class="statistic-card">
+                <span class="user-count">5 999 703</span>
+                <p>Användare</p>
+            </div>
+            <div class="statistic-card">
+                <span class="user-count">171 461</span>
+                <p>Företagsanvändare</p>
+            </div>
+            <div class="statistic-card">
+                <span class="user-count">49 794</span>
+                <p>Avsändare</p>
+            </div>
+        </div>
+        <section class="search wrapper">
+            <h2 class="section-title">Letar du efter något?</h2>
+            <form role="search">
+                <label for="search" class="form-label">Sök</label>
+                <div class="input-group input-group-lg">
+                    <input
+                    type="search"
+                    class="form-control"
+                    id="search"
+                    name="search"
+                    />
+                    <button type="submit" class="btn btn-primary">Sök</button>
                 </div>
-                <div class="statistic-card">
-                    <span class="user-count">171 461</span>
-                    <p>Företagsanvändare</p>
-                </div>
-                <div class="statistic-card">
-                    <span class="user-count">49 794</span>
-                    <p>Avsändare</p>
-                </div>
-            </section>
-            <section class="search">
-                <div class="wrapper">
-                    <div class="section-title">
-                        <form role=search>
-                            <h2>Letar du efter något?</h2>
-                            <label for="search">Sök</label>
-                            <div class="input-group mb-1">
-                                <input type="search" id="search" name="search">
-                                <button type="submit" class="btn btn-primary">Sök</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </section>
-            <section class="kivra-video" id="funkar">
-                <div class="wrapper">
-                    <div class="section-title">
-                        <h2>Så fungerar Kivra</h2>
-                    </div>
-                    <video width="1280" height="720" muted preload="metadata" controls poster="/assets/video/kivra-how-kivra-works.jpg">
-                        <source src="/assets/video/kivra-how-kivra-works.webm" type="video/webm">
-                        <source src="/assets/video/kivra-how-kivra-works.mp4" type="video/mp4">
-                        <track default kind="captions" srclang="sv" src="/assets/video/kivra.sv.vtt">
-                        <p>
-                            Din webbläsare stödjer inte HTML video. Du kan ladda ned filmen istället.
-                            <a href="/assets/video/kivra-how-kivra-works.webm" download="kivra-how-kivra-works.webm">Ladda ned som WebM</a>
-                            <a href="/assets/video/kivra-how-kivra-works.mp4" download="kivra-how-kivra-works.mp4">Ladda ned som MP4</a>
-                        </p>
-                    </video>
-                </div>
-            </section>
-            <section class="services" id="tjanster">
-                <div class="wrapper">
-                    <div class="section-title">
-                        <h2>Fem tjänster som gör livet enklare</h2>
-                    </div>
-                        <div class="article-list">
-                            <article class="article-card">
-                                <img src="/assets/image/brevbunt.webp" alt="" width="230" height="132" loading="lazy">
-                                <h3>Digital post</h3>
-                                <p>Farväl, fönsterkuvert. Med Kivra får du brev digitalt från anslutna företag och myndigheter.</p>
-                                <a href="#" class="text-article-link arrow-right">Läs mer om digital brevlåda</a>
-                            </article>
-                            <article class="article-card">
-                                <img src="/assets/image/kvitto-vaska.webp" alt="" width="230" height="132" loading="lazy">
-                                <h3>Digitala kvitton</h3>
-                                <p>Slipp överfulla fickor. Hos oss får du digitala kvitton från anslutna butiker och företag.</p>
-                                <a href="#" class="text-article-link arrow-right">Läs mer om kvitton</a>
-                            </article>
-                            <article class="article-card">
-                                <img src="/assets/image/faktura-planbok.webp" alt="" width="230" height="132" loading="lazy">
-                                <h3>Digitala fakturor</h3>
-                                <p>Klick, klick, klart. Betala dina fakturor direkt i Kivra. Det går snabbt och du får bättre koll på utgifterna.</p>
-                                <a href="#" class="text-article-link arrow-right">Läs mer om digital brevlåda</a>
-                            </article>
-                            <article class="article-card">
-                                <img src="/assets/image/pengapase.webp" alt="" width="230" height="132" loading="lazy">
-                                <h3>Digitala lönebesked</h3>
-                                <p>Alla löner samlade. Få lönebesked direkt i Kivra. Om din arbetsgivare är ansluten kan du komma igång direkt.</p>
-                                <a href="#" class="text-article-link arrow-right">Läs mer om lönebesked</a>
-                            </article>
-                            <article class="article-card">
-                                <img src="/assets/image/dokument-kassaskap.webp" alt="" width="230" height="132" loading="lazy">
-                                <h3>Uppladdningar</h3>
-                                <p>Inga fler pärmar. Fota av och ladda upp sånt du har liggandes hemma - alla viktigheter på samma plats.</p>
-                                <a href="#" class="text-article-link arrow-right">Läs mer om uppladdningar</a>
-                            </article>
-                            <article class="article-card">
-                                <img src="/assets/image/katt.webp" alt="" width="230" height="132" loading="lazy">
-                                <h3>Kom igång med ett klick</h3>
-                                <p>Att skaffa Kivra är gratis och tar bara någon minut. Säg hej till ett smidigare liv!</p>
-                                <a href="#" class="btn btn-secondary btn-lg">
-                                    <svg role="img" aria-label="BankID" width="24" height="24" version="1.1" x="0px" y="0px" viewBox="0 0 320.6 305.3" style="enable-background:new 0 0 320.6 305.3" class="bankid-green" xml:space="preserve"><g><path d="M102.3,160.2L115.5,77c-5.2,0-14.1,0-14.1,0c-6.6,0-15.1-3.7-17.6-10.5C83,64.2,81.1,56.3,92,48.6c3.9-2.7,6.4-5.7,6.9-8
-                                        c0.5-2.4-0.1-4.5-1.8-6.1c-2.4-2.3-7.1-3.6-13.1-3.6c-10.1,0-17.2,5.8-17.9,10c-0.5,3.1,1.9,5.6,4,7.2c6.3,4.7,7.8,11.5,3.9,17.9
-                                        c-4,6.6-12.7,10.9-22,11c0,0-9.2,0-14.4,0c-1.2,8.1-20.8,132.3-22.3,142.1h78.1c0.7-4.4,4.3-27.9,9.2-58.9L102.3,160.2L102.3,160.2
-                                        z"></path><path d="M206.9,4.2h-79.5l-10.6,67.3h13.5c7.4,0,14.4-3.4,17.4-8.3c1-1.6,1.4-3,1.4-4.3c0-2.8-1.9-4.9-3.8-6.3
-                                        c-5.2-3.9-6.3-8-6.3-10.9c0-0.6,0-1.1,0.1-1.6c1.1-7.1,10.7-14.8,23.4-14.8c7.6,0,13.4,1.8,16.9,5.1c3.1,2.9,4.3,7,3.4,11.3
-                                        c-1.1,5.1-6.2,9.3-9.1,11.4c-7.7,5.4-6.7,10.1-6.2,11.5c1.6,4.2,7.7,6.9,12.4,6.9h20.5c0,0,0,0,0,0.1c28,0.2,43,13.1,38.3,43.1
-                                        c-4.4,27.9-25.8,39.9-51.3,40.1l-10.1,64.4h14.9c62.9,0,114.3-40.4,124.4-104.2C329.1,35.8,278.9,4.2,206.9,4.2z"></path><path d="M206.9,4.2h-79.5l-10.6,67.3h13.5c7.4,0,14.4-3.4,17.4-8.3c1-1.6,1.4-3,1.4-4.3c0-2.8-1.9-4.9-3.8-6.3
-                                        c-5.2-3.9-6.3-8-6.3-10.9c0-0.6,0-1.1,0.1-1.6c1.1-7.1,10.7-14.8,23.4-14.8c7.6,0,13.4,1.8,16.9,5.1c3.1,2.9,4.3,7,3.4,11.3
-                                        c-1.1,5.1-6.2,9.3-9.1,11.4c-7.7,5.4-6.7,10.1-6.2,11.5c1.6,4.2,7.7,6.9,12.4,6.9h20.5c0,0,0,0,0,0.1c28,0.2,43,13.1,38.3,43.1
-                                        c-4.4,27.9-25.8,39.9-51.3,40.1l-10.1,64.4h14.9c62.9,0,114.3-40.4,124.4-104.2C329.1,35.8,278.9,4.2,206.9,4.2z"></path><g><path d="M11.1,247.8H43c13.6,0,16.9,6.9,15.9,13.2c-0.8,5.1-4.3,8.9-10.3,11.4c7.6,2.9,10.6,7.4,9.5,14.5
-                                            c-1.4,8.9-9.1,15.5-19.2,15.5H2.6L11.1,247.8z M32.2,270.4c6.2,0,9.1-3.3,9.7-7.2c0.6-4.2-1.3-7.1-7.5-7.1h-5.5l-2.2,14.3H32.2z
-                                                M28.8,294c6.4,0,10.1-2.6,11-7.9c0.7-4.6-1.9-7.3-8.1-7.3h-6.3L23,294.1L28.8,294L28.8,294z"></path><path d="M102.8,302.8c-8.3,0.6-12.3-0.3-14.3-3.9c-4.4,2.7-9.3,4.1-14.5,4.1c-9.4,0-12.7-4.9-11.8-10.3c0.4-2.6,1.9-5.1,4.3-7.2
-                                            c5.2-4.5,18-5.1,23-8.5c0.4-3.8-1.1-5.2-5.8-5.2c-5.5,0-10.1,1.8-18,7.2l1.9-12.4c6.8-4.9,13.4-7.2,21-7.2c9.7,0,18.3,4,16.7,14.6
-                                            l-1.9,12c-0.7,4.2-0.5,5.5,4.2,5.6L102.8,302.8z M88.4,284c-4.4,2.8-12.6,2.3-13.5,8.1c-0.4,2.7,1.3,4.7,4,4.7
-                                            c2.6,0,5.8-1.1,8.4-2.9c-0.2-1-0.1-2,0.2-3.9L88.4,284z"></path><path d="M118.3,260.1h16.6l-0.9,5.5c5.3-4.5,9.3-6.2,14.5-6.2c9.3,0,13.6,5.7,12.1,15l-4.3,27.9h-16.6l3.6-23.1
-                                            c0.7-4.2-0.6-6.2-3.8-6.2c-2.6,0-5,1.4-7.3,4.5l-3.8,24.7h-16.6L118.3,260.1z"></path><path d="M173.5,247.8h16.6l-4.2,26.8l15.9-14.5h20.5l-20.4,18l16.4,24.2h-20.9l-12.6-19.5h-0.2l-3,19.5H165L173.5,247.8z"></path></g><g><path d="M232.3,247.8h19.1l-8.4,54.5h-19.1L232.3,247.8z"></path><path d="M260.7,247.8H288c21.1,0,27.2,15.3,25.2,28c-1.9,12.4-11.7,26.5-30.2,26.5h-30.8L260.7,247.8z M278.4,289.3
-                                            c9.3,0,14.4-4.6,15.9-14.3c1.1-7.2-1.1-14.3-11.4-14.3h-5.1l-4.4,28.6H278.4z"></path></g></g></svg><span>Kom igång</span>
-                                </a>
-                            </article>
-                        </div>
-                </div>    
-            </section>
-        </main>
-        <footer class="footer">
-            <div class="wrapper">
-                <div class="footer grid">
-                    <nav class="footer-nav" aria-label="Footer" role="navigation">
-                        <ul class="nav-list nav-primary">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Privat</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Skapa privatkonto</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Hur funkar Kivra</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Hjälpcenter</a>
-                            </li>
-                        </ul>
-                        <ul class="nav-list nav-secondary">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Företag</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Kivra Företag</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Branscher</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Hjälpcenter</a>
-                            </li>
-                        </ul>
-                        <ul class="nav-list nav-tetriary">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Om Kivra</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Jobba hos oss</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Villkor</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Press</a>
-                            </li>
-                        </ul>
-                        <ul class="nav-list nav-quaternary">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Dataskydd</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Personuppgiftsbehandling för Avsändare</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Personuppgiftsbehandling för Användare</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Cookies</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="org-info">
-                        <a href="#">
-                            <svg role="img" aria-label="Home" class="brand-logo" width="125" height="33" viewBox="0 0 125 33" fill="none"><g><path d="M18.31 21.4787L14.67 13.6297L26.2 0.554565H18.96L5.995 15.5782V0.554565H0V32.8201H5.995V23.4772L10.46 18.416L13.24 24.3815C15.64 29.4976 18.915 33 24.08 33C24.91 33 25.925 32.9101 26.665 32.7252V27.5641C26.665 27.5641 26.02 27.704 25.145 27.704C21.865 27.699 20.25 25.6705 18.31 21.4787Z" fill="currentColor"></path><path d="M53.135 27.0895C49.165 18.6608 46.37 9.77259 44.74 0.554565H38.745C40.545 11.7561 44.37 22.9526 49.725 32.8201H56.505C61.58 23.9718 65.82 11.4363 67.53 0.554565H61.58C59.95 9.77259 57.11 18.6608 53.135 27.0895Z" fill="currentColor"></path><path d="M35.56 0.554565H29.565V32.8201H35.56V0.554565Z" fill="currentColor"></path><path d="M125 32.8151C123.11 21.9833 119.19 10.3222 113.745 0.549561H107.055C101.61 10.3222 97.645 21.9833 95.755 32.8151H101.75C102.14 30.397 102.63 27.9338 103.215 25.4657C104.995 25.8654 107.3 26.1302 110.375 26.1302C113.405 26.1302 115.745 25.8604 117.535 25.4657C118.125 27.9338 118.61 30.392 119 32.8151H125ZM110.38 20.7393C107.945 20.7393 105.89 20.4845 104.63 20.2197C106.1 15.2934 108 10.4221 110.38 5.86052C112.76 10.4221 114.66 15.2934 116.13 20.2197C114.87 20.4845 112.815 20.7393 110.38 20.7393Z" fill="currentColor"></path><path d="M86.63 20.8043C90.9 19.4503 93.77 15.863 93.77 11.1066C93.775 4.65647 88.605 0 81.735 0C74.955 0 69.28 4.51658 69.28 12.2607V32.8152H75.275V12.7204C75.275 8.24875 78.045 5.5758 81.735 5.5758C85.24 5.5758 87.685 7.97395 87.685 11.4313C87.685 15.2584 84.735 18.1612 78.135 18.1612V21.7085C83.44 22.9526 87.175 27.5641 87.775 32.8152H94C93.505 27.6841 90.28 22.7828 86.63 20.8043Z" fill="currentColor"></path></g><defs><clipPath><rect width="125" height="33" fill="white"></rect></clipPath></defs></svg>
-                        </a>
-                        <address>Kivra AB. Org.nr: 556840-2266.<br>Säte: Stockholm</address>
-                        <div></div>
-                        <button class="btn btn-outline-light btn-lg">
-                            <svg class="flag" width="64" height="40" viewBox="0 0 64 40" fill="none"><g clip-path="url(#clip0)"><path d="M0 0H64V40.1075H0V0Z" fill="#000066"></path><path d="M0 8.68201L62.9658 40H64V31.6558L0.573256 0H0V8.68201ZM64 8.43991L0.573256 40H0V31.4255L62.9658 0H64V8.43991Z" fill="white"></path><path d="M25.0728 0V40H38.4663V0H25.0728ZM-2.38419e-07 13.3692V26.7383H64V13.3692H-2.38419e-07Z" fill="white"></path><path d="M0 16.043V24.0645H64V16.043H0ZM27.7515 0V40H35.7875V0H27.7515ZM0 35.9096L18.376 26.7383H24.3656L0 38.8989V35.9096ZM0 4.19789L18.376 13.3692H12.3864L0 7.18734V4.19789ZM39.1735 13.3692L64 0.978485V3.96784L45.1631 13.3692H39.1735ZM64 36.1396L45.1631 26.7383H51.1527L64 33.1502V36.1396Z" fill="#CC0000"></path></g><defs><clipPath><rect width="64" height="40" fill="white"></rect></clipPath></defs></svg>
-                            <span>English</span>
-                        </button>
-                    </div>
+            </form>
+        </section>
+        <section class="kivra-video wrapper" id="funkar">
+            <h2 class="section-title">Så fungerar Kivra</h2>
+            <video width="1280" height="720" preload="metadata" muted controls
+                poster="./assets/video/kivra-how-kivra-works.jpg">
+                <!-- <source src="/assets/video/kivra-how-kivra-works.webm" type="video/webm" /> -->
+                <source src="./assets/video/kivra-how-kivra-works.mp4" type="video/mp4" />
+                <track default kind="captions" srclang="sv" src="./assets/video/kivra-sv.vtt" />
+                <p>
+                    Din webbläsare stödjer inte HTML video. Du kan ladda ned filmen
+                    istället.
+                    <!-- <a href="/assets/video/kivra-how-kivra-works.webm" download="kivra-how-kivra-works.webm">Ladda
+                        ned som WebM</a> -->
+                    <a href="./assets/video/kivra-how-kivra-works.mp4" download="kivra-how-kivra-works.mp4">Ladda ned
+                        som MP4</a>
+                </p>
+            </video>
+        </section>
+        <section class="services wrapper" id="tjanster">
+            <h2 class="section-title">Fem tjänster som gör livet enklare</h2>
+            <div class="article-list">
+                <article class="article-card">
+                    <img src="/assets/image/brevbunt.webp" alt="" width="230" height="132" loading="lazy" />
+                    <h3>Digital post</h3>
+                    <p>
+                        Farväl, fönsterkuvert. Med Kivra får du brev digitalt från
+                        anslutna företag och myndigheter.
+                    </p>
+                    <a href="#" class="text-article-link arrow-right">Läs mer om digital brevlåda</a>
+                </article>
+                <article class="article-card">
+                    <img src="/assets/image/kvitto-vaska.webp" alt="" width="230" height="132" loading="lazy" />
+                    <h3>Digitala kvitton</h3>
+                    <p>
+                        Slipp överfulla fickor. Hos oss får du digitala kvitton från
+                        anslutna butiker och företag.
+                    </p>
+                    <a href="#" class="text-article-link arrow-right">Läs mer om kvitton</a>
+                </article>
+                <article class="article-card">
+                    <img src="/assets/image/faktura-planbok.webp" alt="" width="230" height="132" loading="lazy" />
+                    <h3>Digitala fakturor</h3>
+                    <p>
+                        Klick, klick, klart. Betala dina fakturor direkt i Kivra. Det
+                        går snabbt och du får bättre koll på utgifterna.
+                    </p>
+                    <a href="#" class="text-article-link arrow-right">Läs mer om digital brevlåda</a>
+                </article>
+                <article class="article-card">
+                    <img src="/assets/image/pengapase.webp" alt="" width="230" height="132" loading="lazy" />
+                    <h3>Digitala lönebesked</h3>
+                    <p>
+                        Alla löner samlade. Få lönebesked direkt i Kivra. Om din
+                        arbetsgivare är ansluten kan du komma igång direkt.
+                    </p>
+                    <a href="#" class="text-article-link arrow-right">Läs mer om lönebesked</a>
+                </article>
+                <article class="article-card">
+                    <img src="/assets/image/dokument-kassaskap.webp" alt="" width="230" height="132"
+                        loading="lazy" />
+                    <h3>Uppladdningar</h3>
+                    <p>
+                        Inga fler pärmar. Fota av och ladda upp sånt du har liggandes
+                        hemma - alla viktigheter på samma plats.
+                    </p>
+                    <a href="#" class="text-article-link arrow-right">Läs mer om uppladdningar</a>
+                </article>
+                <article class="article-card">
+                    <img src="/assets/image/katt.webp" alt="" width="230" height="132" loading="lazy" />
+                    <h3>Kom igång med ett klick</h3>
+                    <p>
+                        Att skaffa Kivra är gratis och tar bara någon minut. Säg hej
+                        till ett smidigare liv!
+                    </p>
+                    <a href="#" class="btn btn-secondary btn-lg"><svg role="img" width="24" height="24" version="1.1" x="0px" y="0px"
+                            viewBox="0 0 320.6 305.3" style="enable-background: new 0 0 320.6 305.3"
+                            class="bankid-green" xml:space="preserve">
+                            <g>
+                                <path d="M102.3,160.2L115.5,77c-5.2,0-14.1,0-14.1,0c-6.6,0-15.1-3.7-17.6-10.5C83,64.2,81.1,56.3,92,48.6c3.9-2.7,6.4-5.7,6.9-8
+                                    c0.5-2.4-0.1-4.5-1.8-6.1c-2.4-2.3-7.1-3.6-13.1-3.6c-10.1,0-17.2,5.8-17.9,10c-0.5,3.1,1.9,5.6,4,7.2c6.3,4.7,7.8,11.5,3.9,17.9
+                                    c-4,6.6-12.7,10.9-22,11c0,0-9.2,0-14.4,0c-1.2,8.1-20.8,132.3-22.3,142.1h78.1c0.7-4.4,4.3-27.9,9.2-58.9L102.3,160.2L102.3,160.2
+                                    z"></path>
+                                <path
+                                    d="M206.9,4.2h-79.5l-10.6,67.3h13.5c7.4,0,14.4-3.4,17.4-8.3c1-1.6,1.4-3,1.4-4.3c0-2.8-1.9-4.9-3.8-6.3
+                                    c-5.2-3.9-6.3-8-6.3-10.9c0-0.6,0-1.1,0.1-1.6c1.1-7.1,10.7-14.8,23.4-14.8c7.6,0,13.4,1.8,16.9,5.1c3.1,2.9,4.3,7,3.4,11.3
+                                    c-1.1,5.1-6.2,9.3-9.1,11.4c-7.7,5.4-6.7,10.1-6.2,11.5c1.6,4.2,7.7,6.9,12.4,6.9h20.5c0,0,0,0,0,0.1c28,0.2,43,13.1,38.3,43.1
+                                    c-4.4,27.9-25.8,39.9-51.3,40.1l-10.1,64.4h14.9c62.9,0,114.3-40.4,124.4-104.2C329.1,35.8,278.9,4.2,206.9,4.2z">
+                                </path>
+                                <path
+                                    d="M206.9,4.2h-79.5l-10.6,67.3h13.5c7.4,0,14.4-3.4,17.4-8.3c1-1.6,1.4-3,1.4-4.3c0-2.8-1.9-4.9-3.8-6.3
+                                    c-5.2-3.9-6.3-8-6.3-10.9c0-0.6,0-1.1,0.1-1.6c1.1-7.1,10.7-14.8,23.4-14.8c7.6,0,13.4,1.8,16.9,5.1c3.1,2.9,4.3,7,3.4,11.3
+                                    c-1.1,5.1-6.2,9.3-9.1,11.4c-7.7,5.4-6.7,10.1-6.2,11.5c1.6,4.2,7.7,6.9,12.4,6.9h20.5c0,0,0,0,0,0.1c28,0.2,43,13.1,38.3,43.1
+                                    c-4.4,27.9-25.8,39.9-51.3,40.1l-10.1,64.4h14.9c62.9,0,114.3-40.4,124.4-104.2C329.1,35.8,278.9,4.2,206.9,4.2z">
+                                </path>
+                                <g>
+                                    <path
+                                        d="M11.1,247.8H43c13.6,0,16.9,6.9,15.9,13.2c-0.8,5.1-4.3,8.9-10.3,11.4c7.6,2.9,10.6,7.4,9.5,14.5
+                                        c-1.4,8.9-9.1,15.5-19.2,15.5H2.6L11.1,247.8z M32.2,270.4c6.2,0,9.1-3.3,9.7-7.2c0.6-4.2-1.3-7.1-7.5-7.1h-5.5l-2.2,14.3H32.2z
+                                            M28.8,294c6.4,0,10.1-2.6,11-7.9c0.7-4.6-1.9-7.3-8.1-7.3h-6.3L23,294.1L28.8,294L28.8,294z">
+                                    </path>
+                                    <path d="M102.8,302.8c-8.3,0.6-12.3-0.3-14.3-3.9c-4.4,2.7-9.3,4.1-14.5,4.1c-9.4,0-12.7-4.9-11.8-10.3c0.4-2.6,1.9-5.1,4.3-7.2
+                                        c5.2-4.5,18-5.1,23-8.5c0.4-3.8-1.1-5.2-5.8-5.2c-5.5,0-10.1,1.8-18,7.2l1.9-12.4c6.8-4.9,13.4-7.2,21-7.2c9.7,0,18.3,4,16.7,14.6
+                                        l-1.9,12c-0.7,4.2-0.5,5.5,4.2,5.6L102.8,302.8z M88.4,284c-4.4,2.8-12.6,2.3-13.5,8.1c-0.4,2.7,1.3,4.7,4,4.7
+                                        c2.6,0,5.8-1.1,8.4-2.9c-0.2-1-0.1-2,0.2-3.9L88.4,284z"></path>
+                                    <path
+                                        d="M118.3,260.1h16.6l-0.9,5.5c5.3-4.5,9.3-6.2,14.5-6.2c9.3,0,13.6,5.7,12.1,15l-4.3,27.9h-16.6l3.6-23.1
+                                        c0.7-4.2-0.6-6.2-3.8-6.2c-2.6,0-5,1.4-7.3,4.5l-3.8,24.7h-16.6L118.3,260.1z">
+                                    </path>
+                                    <path
+                                        d="M173.5,247.8h16.6l-4.2,26.8l15.9-14.5h20.5l-20.4,18l16.4,24.2h-20.9l-12.6-19.5h-0.2l-3,19.5H165L173.5,247.8z">
+                                    </path>
+                                </g>
+                                <g>
+                                    <path d="M232.3,247.8h19.1l-8.4,54.5h-19.1L232.3,247.8z"></path>
+                                    <path
+                                        d="M260.7,247.8H288c21.1,0,27.2,15.3,25.2,28c-1.9,12.4-11.7,26.5-30.2,26.5h-30.8L260.7,247.8z M278.4,289.3
+                                        c9.3,0,14.4-4.6,15.9-14.3c1.1-7.2-1.1-14.3-11.4-14.3h-5.1l-4.4,28.6H278.4z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg><span>Kom igång</span>
+                    </a>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer grid">
+                <nav class="footer-nav" aria-label="Fot">
+                    <ul class="nav-list nav-primary">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Privat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Skapa privatkonto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Hur funkar Kivra</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Hjälpcenter</a>
+                        </li>
+                    </ul>
+                    <ul class="nav-list nav-secondary">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Företag</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Kivra Företag</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Branscher</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Hjälpcenter</a>
+                        </li>
+                    </ul>
+                    <ul class="nav-list nav-tetriary">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Om Kivra</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Jobba hos oss</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Villkor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Press</a>
+                        </li>
+                    </ul>
+                    <ul class="nav-list nav-quaternary">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Dataskydd</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Personuppgiftsbehandling för Avsändare</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Personuppgiftsbehandling för Användare</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Cookies</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="org-info">
+                    <a href="#" title="Hem"><span class="link-brand-logo">Hem</span><svg role="img" class="brand-logo" width="125" height="33"
+                            viewBox="0 0 125 33" fill="none">
+                            <g>
+                                <path
+                                    d="M18.31 21.4787L14.67 13.6297L26.2 0.554565H18.96L5.995 15.5782V0.554565H0V32.8201H5.995V23.4772L10.46 18.416L13.24 24.3815C15.64 29.4976 18.915 33 24.08 33C24.91 33 25.925 32.9101 26.665 32.7252V27.5641C26.665 27.5641 26.02 27.704 25.145 27.704C21.865 27.699 20.25 25.6705 18.31 21.4787Z"
+                                    fill="currentColor"></path>
+                                <path
+                                    d="M53.135 27.0895C49.165 18.6608 46.37 9.77259 44.74 0.554565H38.745C40.545 11.7561 44.37 22.9526 49.725 32.8201H56.505C61.58 23.9718 65.82 11.4363 67.53 0.554565H61.58C59.95 9.77259 57.11 18.6608 53.135 27.0895Z"
+                                    fill="currentColor"></path>
+                                <path d="M35.56 0.554565H29.565V32.8201H35.56V0.554565Z" fill="currentColor"></path>
+                                <path
+                                    d="M125 32.8151C123.11 21.9833 119.19 10.3222 113.745 0.549561H107.055C101.61 10.3222 97.645 21.9833 95.755 32.8151H101.75C102.14 30.397 102.63 27.9338 103.215 25.4657C104.995 25.8654 107.3 26.1302 110.375 26.1302C113.405 26.1302 115.745 25.8604 117.535 25.4657C118.125 27.9338 118.61 30.392 119 32.8151H125ZM110.38 20.7393C107.945 20.7393 105.89 20.4845 104.63 20.2197C106.1 15.2934 108 10.4221 110.38 5.86052C112.76 10.4221 114.66 15.2934 116.13 20.2197C114.87 20.4845 112.815 20.7393 110.38 20.7393Z"
+                                    fill="currentColor"></path>
+                                <path
+                                    d="M86.63 20.8043C90.9 19.4503 93.77 15.863 93.77 11.1066C93.775 4.65647 88.605 0 81.735 0C74.955 0 69.28 4.51658 69.28 12.2607V32.8152H75.275V12.7204C75.275 8.24875 78.045 5.5758 81.735 5.5758C85.24 5.5758 87.685 7.97395 87.685 11.4313C87.685 15.2584 84.735 18.1612 78.135 18.1612V21.7085C83.44 22.9526 87.175 27.5641 87.775 32.8152H94C93.505 27.6841 90.28 22.7828 86.63 20.8043Z"
+                                    fill="currentColor"></path>
+                            </g>
+                            <defs>
+                                <clipPath>
+                                    <rect width="125" height="33" fill="white"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <address>
+                        Kivra AB. Org.nr: 556840&ndash;2266.<br />Säte: Stockholm
+                    </address>
+                    <div></div>
+                    <button class="btn btn-outline-light btn-lg">
+                        <svg class="flag" aria-label="Språk" width="64" height="40" viewBox="0 0 64 40" fill="none">
+                            <g clip-path="url(#clip0)">
+                                <path d="M0 0H64V40.1075H0V0Z" fill="#000066"></path>
+                                <path
+                                    d="M0 8.68201L62.9658 40H64V31.6558L0.573256 0H0V8.68201ZM64 8.43991L0.573256 40H0V31.4255L62.9658 0H64V8.43991Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M25.0728 0V40H38.4663V0H25.0728ZM-2.38419e-07 13.3692V26.7383H64V13.3692H-2.38419e-07Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M0 16.043V24.0645H64V16.043H0ZM27.7515 0V40H35.7875V0H27.7515ZM0 35.9096L18.376 26.7383H24.3656L0 38.8989V35.9096ZM0 4.19789L18.376 13.3692H12.3864L0 7.18734V4.19789ZM39.1735 13.3692L64 0.978485V3.96784L45.1631 13.3692H39.1735ZM64 36.1396L45.1631 26.7383H51.1527L64 33.1502V36.1396Z"
+                                    fill="#CC0000"></path>
+                            </g>
+                            <defs>
+                                <clipPath>
+                                    <rect width="64" height="40" fill="white"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg><span>English</span>
+                    </button>
                 </div>
             </div>
-        </footer>
-    </body>
+        </div>
+    </footer>
+</body>
+
 </html>
