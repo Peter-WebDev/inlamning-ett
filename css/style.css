@@ -3,16 +3,13 @@
   --clr-brand: #002e04;
   --clr-text-regular: #22201c;
   --clr-text-accent-1: #edf9e1;
-
   --clr-bg-regular: #f8f6f3;
   --clr-bg-accent-1: #76c82e;
   --clr-bg-accent-2: #178000;
   --clr-bg-accent-3: #157300;
-
-  /* Fonts */
+  /* Font */
   --ff-brand: "Inter", sans-serif;
-
-  /* --fs-300: 0.9375rem; */
+  /* Font-size */
   --fs-300: 0.9375rem;
   --fs-400: 1.0625rem;
   --fs-500: 1.25rem;
@@ -20,13 +17,12 @@
   --fs-700: 2rem;
   --fs-800: 3rem;
   --fs-900: 4rem;
-
+  /* Font-weight */
   --fw-light: 300;
   --fw-regular: 400;
   --fw-medium: 500;
   --fw-semibold: 600;
   --fw-bold: 700;
-
   /* Utilities */
   --gap: 1rem;
   --rds: 1.25rem;
@@ -114,25 +110,19 @@ li.nav-item {
   width: 24px;
 }
 
-/* Diverse resets inklusive Bootstrap border-color on hover */
-/* .btn-lg {
-  font-size: var(--fs-400);
-  font-weight: var(--fw-semibold);
-} */
-
 form {
   display: inline-block;
   width: 100%;
   max-width: 65ch;
 }
 
+.input-group .btn {
+  z-index: -1;
+}
+
 .kivra-video video {
   border-radius: var(--rds);
   border: 3px solid var(--clr-brand);
-}
-
-.input-group .btn {
-  z-index: -1;
 }
 
 address {
@@ -163,17 +153,16 @@ p.lead {
 }
 
 h2 {
+  font-size: var(--fs-800);
   margin-bottom: 3rem;
 }
 
-h2 {
-  font-size: var(--fs-800);
+h2,h3 {
   font-weight: var(--fw-semibold);
 }
 
 h3 {
   font-size: var(--fs-600);
-  font-weight: var(--fw-semibold);
   text-align: left;
 }
 
@@ -188,7 +177,6 @@ p.lead {
 }
 
 .hero-text {
-  width: 100%;
   max-width: 55ch;
 }
 
@@ -235,7 +223,7 @@ p.lead {
   gap: var(--gap);
 }
 
-.top-nav .nav-list.nav-secondary > .nav-item:first-child {
+.top-nav .nav-list.nav-secondary .nav-item:first-child {
   margin-right: calc(var(--gap) * 3);
 }
 
@@ -272,11 +260,6 @@ p.lead {
   /* text-underline-offset: calc(var(--gap) * 2.4); */
 }
 
-/* Underline on hover för Footer Nav */
-.footer-nav .nav-list .nav-item:hover {
-  text-decoration: underline var(--clr-text-accent-1) solid 1px;
-}
-
 /* Pil till höger för textlänkar */
 a.arrow-right::after {
   content: " \1F806";
@@ -285,12 +268,18 @@ a.arrow-right::after {
   vertical-align: middle;
 }
 
+/* Underline on hover för Footer Nav */
+.footer-nav .nav-list .nav-item:hover {
+  text-decoration: underline solid var(--clr-text-accent-1) 1px;
+}
+
 /* Tillgänglighet Kivra Brand Color Overwrite Bootstrap */
 a:focus-visible,
 .form-control:focus-visible,
 .nav-link:focus-visible,
 .btn:focus-visible,
-video:focus-visible {
+video:focus-visible,
+.btn.btn-secondary:focus-visible {
   outline: 3px solid var(--clr-bg-accent-2);
   outline-offset: 3px;
   border-radius: 0.125rem;
@@ -299,8 +288,6 @@ video:focus-visible {
 
 .btn.btn-secondary:focus-visible {
   outline: 3px solid var(--clr-brand);
-  outline-offset: 3px;
-  border-radius: 0.125rem;
 }
 
 /* Button */
@@ -363,7 +350,7 @@ video:focus-visible {
   box-shadow: inset 0 0 0 1px var(--clr-text-accent-1);
 }
 
-/* Layout inställningar */
+/* Layout */
 section {
   padding: 4rem 0;
 }
@@ -383,11 +370,15 @@ section {
   min-height: 80svh;
 }
 
-.statistic-list {
+.statistic-list,
+.statistic-list > div {
   display: flex;
+  align-items: center;
+}
+
+.statistic-list {
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
   padding: var(--gap) 2rem;
   border-top-left-radius: calc(var(--rds) * 1.2);
   border-top-right-radius: calc(var(--rds) * 1.2);
@@ -396,10 +387,8 @@ section {
 }
 
 .statistic-list > div {
-  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .statistic-card span {
@@ -432,13 +421,12 @@ section {
   align-items: start;
   background-color: var(--clr-bg-regular);
   padding: calc(var(--gap) * 2);
-  border-radius: 1rem;
+  border-radius: var(--rds) * 0.8;
 }
 
 .article-card a {
   font-weight: var(--fw-semibold);
   color: var(--clr-text-regular);
-  /* text-decoration: none; */
   margin-top: auto;
 }
 
@@ -461,17 +449,14 @@ section {
 .footer {
   border-top-left-radius: var(--rds);
   border-top-right-radius: var(--rds);
-  padding: 3rem 0;
+  padding: calc(var(--gap) * 3) 0;
 }
 
-.footer,
-.grid,
-.footer-nav,
-.org-info {
+.grid {
   display: grid;
 }
 
-.footer .grid {
+.footer {
   gap: calc(var(--gap) * 4);
 }
 
@@ -479,7 +464,7 @@ section {
 .org-info {
   grid-template-columns: repeat(
     auto-fit,
-    minmax(calc(300px - var(--gap)), 1fr)
+    minmax(calc(225px - var(--gap)), 1fr)
   );
   justify-items: start;
   gap: var(--gap);
