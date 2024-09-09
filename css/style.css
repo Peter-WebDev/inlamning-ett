@@ -235,6 +235,11 @@ p.lead {
   height: 80px;
 }
 
+.brand-logo,
+.main-nav .nav-secondary .nav-item {
+  padding: 0.5rem 0;
+}
+
 .main-nav .nav-primary .nav-item .nav-link {
   font-size: var(--fs-400);
   line-height: 77px;
@@ -462,10 +467,7 @@ section {
 
 .footer-nav,
 .org-info {
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(calc(225px - var(--gap)), 1fr)
-  );
+  grid-template-columns: repeat(auto-fit, minmax(calc(225px - var(--gap)), 1fr));
   justify-items: start;
   gap: var(--gap);
 }
