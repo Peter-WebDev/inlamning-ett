@@ -242,7 +242,7 @@ p.lead {
 
 .main-nav .nav-primary .nav-item .nav-link {
   font-size: var(--fs-400);
-  line-height: 77px;
+  line-height: 78px;
 }
 
 .main-nav .nav-list.nav-primary {
@@ -255,14 +255,11 @@ p.lead {
   display: inline-block;
   width: 10px;
   margin-left: calc(var(--gap) / 1.25);
-  /* vertical-align: middle; */
 }
 
 /* Underline on hover för Main Nav Primary */
 .main-nav .nav-primary .nav-link:hover {
   border-bottom: 3px solid var(--clr-brand);
-  line-height: 77px;
-  /* text-underline-offset: calc(var(--gap) * 2.4); */
 }
 
 /* Pil till höger för textlänkar */
