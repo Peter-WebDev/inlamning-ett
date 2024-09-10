@@ -426,7 +426,7 @@ section {
   align-items: start;
   background-color: var(--clr-bg-regular);
   padding: calc(var(--gap) * 2);
-  border-radius: var(--rds) * 0.8;
+  border-radius: calc(var(--rds) * 0.8);
 }
 
 .article-card a {
