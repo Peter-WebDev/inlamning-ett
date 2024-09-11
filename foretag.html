@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="sv">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description"
+    content="Börja skicka digitala brev, fakturor och kvitton till era kunder. Även lönebesked och avtal. Och bli pappersfria med ett företagskonto.">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    media="print" onload="this.media='all'">
+
+<link rel="preload" as="image" href="/assets/image/business-hero-background.webp">
+
+<link rel="stylesheet" href="/css/foretag.css">
+<title>Hem | Kivra Företag</title>
+
+<body class="body">
+    <header class="nav-header">
+        <nav class="top-nav" aria-label="Topp">
+            <ul class="nav-list nav-primary">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Privat</a>
+                </li>
+                <li class="nav-item">
+                    <a href="foretag.html" class="nav-link active">För företag</a>
+                </li>
+            </ul>
+            <ul class="nav-list nav-secondary">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Om Kivra</a>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link">
+                        <svg class="flag" width="64" height="40" viewBox="0 0 64 40" fill="none">
+                            <g>
+                                <path d="M0 0H64V40.1075H0V0Z" fill="#000066"></path>
+                                <path
+                                    d="M0 8.68201L62.9658 40H64V31.6558L0.573256 0H0V8.68201ZM64 8.43991L0.573256 40H0V31.4255L62.9658 0H64V8.43991Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M25.0728 0V40H38.4663V0H25.0728ZM-2.38419e-07 13.3692V26.7383H64V13.3692H-2.38419e-07Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M0 16.043V24.0645H64V16.043H0ZM27.7515 0V40H35.7875V0H27.7515ZM0 35.9096L18.376 26.7383H24.3656L0 38.8989V35.9096ZM0 4.19789L18.376 13.3692H12.3864L0 7.18734V4.19789ZM39.1735 13.3692L64 0.978485V3.96784L45.1631 13.3692H39.1735ZM64 36.1396L45.1631 26.7383H51.1527L64 33.1502V36.1396Z"
+                                    fill="#CC0000"></path>
+                            </g>
+                            <defs>
+                                <clipPath>
+                                    <rect width="64" height="40" fill="white"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <span lang="en">English</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <nav class="main-nav" aria-label="Huvud">
+            <a href="#" aria-label="Till toppen av startsidan"><span class="link-brand-logo">Hem</span><svg class="brand-logo" width="125" height="33" viewBox="0 0 125 33"
+                    fill="none">
+                    <g>
+                        <path d="M18.31 21.4787L14.67 13.6297L26.2 0.554565H18.96L5.995 15.5782V0.554565H0V32.8201H5.995V23.4772L10.46 18.416L13.24 24.3815C15.64 29.4976 18.915 33 24.08 33C24.91 33 25.925 32.9101 26.665 32.7252V27.5641C26.665 27.5641 26.02 27.704 25.145 27.704C21.865 27.699 20.25 25.6705 18.31 21.4787Z"
+                            fill="currentColor"></path>
+                        <path
+                            d="M53.135 27.0895C49.165 18.6608 46.37 9.77259 44.74 0.554565H38.745C40.545 11.7561 44.37 22.9526 49.725 32.8201H56.505C61.58 23.9718 65.82 11.4363 67.53 0.554565H61.58C59.95 9.77259 57.11 18.6608 53.135 27.0895Z"
+                            fill="currentColor"></path>
+                        <path d="M35.56 0.554565H29.565V32.8201H35.56V0.554565Z" fill="currentColor"></path>
+                        <path
+                            d="M125 32.8151C123.11 21.9833 119.19 10.3222 113.745 0.549561H107.055C101.61 10.3222 97.645 21.9833 95.755 32.8151H101.75C102.14 30.397 102.63 27.9338 103.215 25.4657C104.995 25.8654 107.3 26.1302 110.375 26.1302C113.405 26.1302 115.745 25.8604 117.535 25.4657C118.125 27.9338 118.61 30.392 119 32.8151H125ZM110.38 20.7393C107.945 20.7393 105.89 20.4845 104.63 20.2197C106.1 15.2934 108 10.4221 110.38 5.86052C112.76 10.4221 114.66 15.2934 116.13 20.2197C114.87 20.4845 112.815 20.7393 110.38 20.7393Z"
+                            fill="currentColor"></path>
+                        <path
+                            d="M86.63 20.8043C90.9 19.4503 93.77 15.863 93.77 11.1066C93.775 4.65647 88.605 0 81.735 0C74.955 0 69.28 4.51658 69.28 12.2607V32.8152H75.275V12.7204C75.275 8.24875 78.045 5.5758 81.735 5.5758C85.24 5.5758 87.685 7.97395 87.685 11.4313C87.685 15.2584 84.735 18.1612 78.135 18.1612V21.7085C83.44 22.9526 87.175 27.5641 87.775 32.8152H94C93.505 27.6841 90.28 22.7828 86.63 20.8043Z"
+                            fill="currentColor"></path>
+                    </g>
+                    <defs>
+                        <clipPath>
+                            <rect width="125" height="33" fill="white"></rect>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </a>
+            <ul class="nav-list nav-primary">
+                <li class="nav-item">
+                    <a class="nav-link chevron" href="#">Skicka</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link chevron" href="#">Ta emot</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link chevron" href="#">Hjälp</a>
+                </li>
+            </ul>
+            <ul class="nav-list nav-secondary">
+                <li class="nav-item">
+                    <a class="btn btn-outline-light" href="#"><span>För partners</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-light" href="#"><span>För utvecklare</span></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-bg">
+            <header class="hero-content">
+                <div class="hero-text">
+                    <h1>Skicka och ta emot digital post med Kivra</h1>
+                    <p class="lead">
+                        Med Kivra kan företag både skicka och ta emot digital post. Få viktig information och fakturor direkt till ditt företagskonto. Minska kostnaderna och skicka posten digitalt. Snabbt och säkert, även till kunderna som är "på språng".
+                    </p>
+                </div>
+                <a class="btn btn-primary btn-lg" href="#"><span>Skicka med Kivra</span></a>
+                <a class="btn btn-primary btn-lg" href="#"><span>Kivra företag</span></a>
+            </header>
+        </section>
+        <div class="statistic-list" tabindex="-1">
+            <div class="statistic-card">
+                <span class="user-count">5 999 703</span>
+                <p>Användare</p>
+            </div>
+            <div class="statistic-card">
+                <span class="user-count">171 461</span>
+                <p>Företagsanvändare</p>
+            </div>
+            <div class="statistic-card">
+                <span class="user-count">49 794</span>
+                <p>Avsändare</p>
+            </div>
+        </div>
+        <section class="business wrapper" id="business">
+            <div class="article-list">
+                    <img src="assets/image/fotograf-desola-sector-tv__personer-tittar-pa-en-dator.webp" alt="Två personer tittar på en datorskärm" width="840" height="560" loading="lazy">
+                    <div>
+                        <h2>Hundrasjuttiotusen företagare och flera miljoner privatpersoner</h2>
+                        <p>
+                            Få en direktkanal till halva Sveriges befolkning och 30% av svenska företag. 6 miljoner privatpersoner och över 170.000 mindre företag vill ha sina försändelser i Kivra. Med Kivras höga öppningsgrad kan ni vara säkra på ni når fram genom bruset och att budskapet går fram.
+                        </p>
+                        <a href="#" class="btn btn-outline-dark arrow-right">Så når du B2b</a>
+                    </div>
+                    <div>
+                        <h2>Vi vill bli så små som möjligt</h2>
+                        <p>
+                            <strong>När det gäller utsläpp, alltså.</strong> Vårt totala koldioxidutsläpp förra året var ungefär 220 ton koldioxid. Det kan låta mycket, men för att sätta det i perspektiv motsvarar det i genomsnitt bara 28 privatpersoners utsläpp på ett år.
+                        </p>
+                        <p>
+                            Apropå det sparade våra avsändare hela 2.450 ton koldioxid bara under 2022. Det betyder också att 45.000 träd fick stå kvar istället för att bli räkningar och kvitton. Vill du veta mer om vårt klimatavtryck? Släng ett öga på vår klimatrapport.
+                        </p>
+                        <a href="#" class="btn btn-outline-dark arrow-right">Klimatrapport</a>
+                    </div>
+                    <img src="assets/image/simon-wilkes-landskap-med-nagra-trad-och-vattendrag-som-delar-unsplash.webp" alt="En bäck delar av ett grönskande landskap med träd på båda sidor" width="840" height="560" loading="lazy">
+                    <img src="assets/image/man-med-horlurar-deltar-och-lyssnar-fokuserat.webp" alt="Man med hörlurar deltar och lyssnar fokuserat framför laptop" width="840" height="560" loading="lazy">
+                    <div>
+                        <h2>Lär dig mer om Kivra när du har en minut över</h2>
+                        <p>
+                            Kivra är mer än digitala brev. Mycket mer, faktiskt. Digitala fakturor, lönebesked &ndash; listan är lång. Lär dig mer om hur allt hänger ihop genom att lyssna på ett inspelat webinar.
+                        </p>
+                        <a href="#" class="btn btn-outline-dark arrow-right">Lyssna</a>
+                    </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer grid">
+                <nav class="footer-nav grid" aria-label="Fot">
+                    <ul class="nav-list nav-primary">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Privat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Skapa privatkonto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Hur funkar Kivra</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Hjälpcenter</a>
+                        </li>
+                    </ul>
+                    <ul class="nav-list nav-secondary">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Företag</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Kivra Företag</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Branscher</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Hjälpcenter</a>
+                        </li>
+                    </ul>
+                    <ul class="nav-list nav-tetriary">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Om Kivra</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Jobba hos oss</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Villkor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Press</a>
+                        </li>
+                    </ul>
+                    <ul class="nav-list nav-quaternary">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Dataskydd</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Personuppgiftsbehandling för Avsändare</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Personuppgiftsbehandling för Användare</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Cookies</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="org-info grid">
+                    <a href="#" aria-label="Till toppen av startsidan"><span class="link-brand-logo">Hem</span><svg role="img" class="brand-logo" width="125" height="33"
+                            viewBox="0 0 125 33" fill="none">
+                            <g>
+                                <path
+                                    d="M18.31 21.4787L14.67 13.6297L26.2 0.554565H18.96L5.995 15.5782V0.554565H0V32.8201H5.995V23.4772L10.46 18.416L13.24 24.3815C15.64 29.4976 18.915 33 24.08 33C24.91 33 25.925 32.9101 26.665 32.7252V27.5641C26.665 27.5641 26.02 27.704 25.145 27.704C21.865 27.699 20.25 25.6705 18.31 21.4787Z"
+                                    fill="currentColor"></path>
+                                <path
+                                    d="M53.135 27.0895C49.165 18.6608 46.37 9.77259 44.74 0.554565H38.745C40.545 11.7561 44.37 22.9526 49.725 32.8201H56.505C61.58 23.9718 65.82 11.4363 67.53 0.554565H61.58C59.95 9.77259 57.11 18.6608 53.135 27.0895Z"
+                                    fill="currentColor"></path>
+                                <path d="M35.56 0.554565H29.565V32.8201H35.56V0.554565Z" fill="currentColor"></path>
+                                <path
+                                    d="M125 32.8151C123.11 21.9833 119.19 10.3222 113.745 0.549561H107.055C101.61 10.3222 97.645 21.9833 95.755 32.8151H101.75C102.14 30.397 102.63 27.9338 103.215 25.4657C104.995 25.8654 107.3 26.1302 110.375 26.1302C113.405 26.1302 115.745 25.8604 117.535 25.4657C118.125 27.9338 118.61 30.392 119 32.8151H125ZM110.38 20.7393C107.945 20.7393 105.89 20.4845 104.63 20.2197C106.1 15.2934 108 10.4221 110.38 5.86052C112.76 10.4221 114.66 15.2934 116.13 20.2197C114.87 20.4845 112.815 20.7393 110.38 20.7393Z"
+                                    fill="currentColor"></path>
+                                <path
+                                    d="M86.63 20.8043C90.9 19.4503 93.77 15.863 93.77 11.1066C93.775 4.65647 88.605 0 81.735 0C74.955 0 69.28 4.51658 69.28 12.2607V32.8152H75.275V12.7204C75.275 8.24875 78.045 5.5758 81.735 5.5758C85.24 5.5758 87.685 7.97395 87.685 11.4313C87.685 15.2584 84.735 18.1612 78.135 18.1612V21.7085C83.44 22.9526 87.175 27.5641 87.775 32.8152H94C93.505 27.6841 90.28 22.7828 86.63 20.8043Z"
+                                    fill="currentColor"></path>
+                            </g>
+                            <defs>
+                                <clipPath>
+                                    <rect width="125" height="33" fill="white"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <address>
+                        Kivra AB. Org.nr: 556840&hyphen;2266.<br>Säte: Stockholm
+                    </address>
+                    <div></div>
+                    <button class="btn btn-outline-light btn-lg">
+                        <svg class="flag" width="64" height="40" viewBox="0 0 64 40" fill="none">
+                            <g clip-path="url(#clip0)">
+                                <path d="M0 0H64V40.1075H0V0Z" fill="#000066"></path>
+                                <path
+                                    d="M0 8.68201L62.9658 40H64V31.6558L0.573256 0H0V8.68201ZM64 8.43991L0.573256 40H0V31.4255L62.9658 0H64V8.43991Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M25.0728 0V40H38.4663V0H25.0728ZM-2.38419e-07 13.3692V26.7383H64V13.3692H-2.38419e-07Z"
+                                    fill="white"></path>
+                                <path
+                                    d="M0 16.043V24.0645H64V16.043H0ZM27.7515 0V40H35.7875V0H27.7515ZM0 35.9096L18.376 26.7383H24.3656L0 38.8989V35.9096ZM0 4.19789L18.376 13.3692H12.3864L0 7.18734V4.19789ZM39.1735 13.3692L64 0.978485V3.96784L45.1631 13.3692H39.1735ZM64 36.1396L45.1631 26.7383H51.1527L64 33.1502V36.1396Z"
+                                    fill="#CC0000"></path>
+                            </g>
+                            <defs>
+                                <clipPath>
+                                    <rect width="64" height="40" fill="white"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg><span lang="en">English</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

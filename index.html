@@ -22,7 +22,7 @@
 
 <link rel="preload" as="image" href="/assets/image/dog-hero-background_003.webp">
 
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/privat.css">
 <title>Hem | Kivra Privat</title>
 
 <body class="body">
@@ -30,10 +30,10 @@
         <nav class="top-nav" aria-label="Topp">
             <ul class="nav-list nav-primary">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Privat</a>
+                    <a href="#" class="nav-link active">Privat</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">För företag</a>
+                    <a href="foretag.html" class="nav-link">För företag</a>
                 </li>
             </ul>
             <ul class="nav-list nav-secondary">
@@ -42,7 +42,7 @@
                 </li>
                 <li class="nav-item">
                     <button class="nav-link">
-                        <svg class="flag" aria-label="Språk" width="64" height="40" viewBox="0 0 64 40" fill="none">
+                        <svg class="flag" width="64" height="40" viewBox="0 0 64 40" fill="none">
                             <g>
                                 <path d="M0 0H64V40.1075H0V0Z" fill="#000066"></path>
                                 <path
@@ -61,13 +61,13 @@
                                 </clipPath>
                             </defs>
                         </svg>
-                        <span>English</span>
+                        <span lang="en">English</span>
                     </button>
                 </li>
             </ul>
         </nav>
         <nav class="main-nav" aria-label="Huvud">
-            <a href="#" title="Hem"><svg role="img" class="brand-logo" width="125" height="33" viewBox="0 0 125 33"
+            <a href="#" aria-label="Till toppen av startsidan"><span class="link-brand-logo">Hem</span><svg class="brand-logo" width="125" height="33" viewBox="0 0 125 33"
                     fill="none">
                     <g>
                         <path d="M18.31 21.4787L14.67 13.6297L26.2 0.554565H18.96L5.995 15.5782V0.554565H0V32.8201H5.995V23.4772L10.46 18.416L13.24 24.3815C15.64 29.4976 18.915 33 24.08 33C24.91 33 25.925 32.9101 26.665 32.7252V27.5641C26.665 27.5641 26.02 27.704 25.145 27.704C21.865 27.699 20.25 25.6705 18.31 21.4787Z"
@@ -92,7 +92,7 @@
             </a>
             <ul class="nav-list nav-primary">
                 <li class="nav-item">
-                    <a class="nav-link chevron" href="#funkar">Så funkar det</a>
+                    <a class="nav-link chevron" href="#fungerar">Så funkar det</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link chevron" href="#tjanster">Våra tjänster</a>
@@ -116,11 +116,11 @@
                     <p class="lead">
                         Ett papper här, ett kvitto där. Känner du igen dig? Vi har en
                         bättre idé. Tänk dig brev, räkningar, kvitton, uppladdningar och
-                        andra viktigheter &dash; allt i samma app. Helt gratis, såklart. Smart,
+                        andra viktigheter &ndash; allt i samma app. Helt gratis, såklart. Smart,
                         säkert och snällt mot miljön!
                     </p>
                 </div>
-                <a class="btn btn-primary btn-lg" href="#"><svg role="img" width="24" height="24"
+                <a class="btn btn-primary btn-lg" href="#"><svg width="24" height="24"
                         version="1.1" x="0px" y="0px" viewBox="0 0 320.6 305.3"
                         style="enable-background: new 0 0 320.6 305.3" class="bankid-white" xml:space="preserve">
                         <g>
@@ -162,7 +162,8 @@
                                 c9.3,0,14.4-4.6,15.9-14.3c1.1-7.2-1.1-14.3-11.4-14.3h-5.1l-4.4,28.6H278.4z"></path>
                             </g>
                         </g>
-                    </svg><span>Skapa konto</span></a>
+                    </svg><span>Skapa konto</span>
+                </a>
             </header>
         </section>
         <div class="statistic-list" tabindex="-1">
@@ -194,7 +195,7 @@
                 </div>
             </form>
         </section>
-        <section class="kivra-video wrapper" id="funkar">
+        <section class="kivra-video wrapper" id="fungerar">
             <h2 class="section-title">Så fungerar Kivra</h2>
             <video width="1280" height="720" preload="metadata" muted controls
                 poster="/assets/video/kivra-how-kivra-works.webm">
@@ -256,7 +257,7 @@
                     <h3>Uppladdningar</h3>
                     <p>
                         Inga fler pärmar. Fota av och ladda upp sånt du har liggandes
-                        hemma - alla viktigheter på samma plats.
+                        hemma &ndash; alla viktigheter på samma plats.
                     </p>
                     <a href="#" class="text-article-link arrow-right">Läs mer om uppladdningar</a>
                 </article>
@@ -339,7 +340,7 @@
                     </ul>
                     <ul class="nav-list nav-secondary">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Företag</a>
+                            <a href="foretag.html" class="nav-link">Företag</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">Kivra Företag</a>
@@ -381,7 +382,7 @@
                     </ul>
                 </nav>
                 <div class="org-info grid">
-                    <a href="#" title="Hem"><span class="link-brand-logo">Hem</span><svg role="img" class="brand-logo" width="125" height="33"
+                    <a href="#" aria-label="Till toppen av startsidan"><span class="link-brand-logo">Hem</span><svg role="img" class="brand-logo" width="125" height="33"
                             viewBox="0 0 125 33" fill="none">
                             <g>
                                 <path
@@ -406,11 +407,11 @@
                         </svg>
                     </a>
                     <address>
-                        Kivra AB. Org.nr: 556840&ndash;2266.<br>Säte: Stockholm
+                        Kivra AB. Org.nr: 556840&hyphen;2266.<br>Säte: Stockholm
                     </address>
                     <div></div>
                     <button class="btn btn-outline-light btn-lg">
-                        <svg class="flag" aria-label="Språk" width="64" height="40" viewBox="0 0 64 40" fill="none">
+                        <svg class="flag" width="64" height="40" viewBox="0 0 64 40" fill="none">
                             <g clip-path="url(#clip0)">
                                 <path d="M0 0H64V40.1075H0V0Z" fill="#000066"></path>
                                 <path
@@ -428,7 +429,7 @@
                                     <rect width="64" height="40" fill="white"></rect>
                                 </clipPath>
                             </defs>
-                        </svg><span>English</span>
+                        </svg><span lang="en">English</span>
                     </button>
                 </div>
             </div>
