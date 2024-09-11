@@ -1,5 +1,4 @@
 :root {
-  /* Color */
   --clr-brand: #003004;
   --clr-text-regular: #22201c;
   --clr-text-white: #ffffff;
@@ -8,9 +7,7 @@
   --clr-bg-accent-1: #76c82e;
   --clr-bg-accent-2: #178000;
   --clr-bg-accent-3: #157300;
-  /* Font */
   --ff-brand: "Inter", sans-serif;
-  /* Font-size */
   --fs-300: 0.9375rem;
   --fs-400: 1.0625rem;
   --fs-500: 1.25rem;
@@ -18,13 +15,11 @@
   --fs-700: 2rem;
   --fs-800: 3rem;
   --fs-900: 4rem;
-  /* Font-weight */
   --fw-light: 300;
   --fw-regular: 400;
   --fw-medium: 500;
   --fw-semibold: 600;
   --fw-bold: 700;
-  /* Utilities */
   --gap: 1rem;
   --rds: 1.25rem;
 }
@@ -91,7 +86,6 @@ li.nav-item {
   font-weight: var(--fw-bold);
 }
 
-/* SVGs */
 .brand-logo {
   color: var(--clr-bg-accent-1);
 }
@@ -135,7 +129,6 @@ address {
   margin-bottom: 0;
 }
 
-/* Font inställingar */
 h1,
 h2,
 h3,
@@ -193,7 +186,6 @@ p.lead {
   margin: 0 auto 2rem;
 }
 
-/* Nav inställingar */
 .nav-header {
   position: sticky;
   top: 0;
@@ -254,7 +246,6 @@ p.lead {
   margin-right: auto;
 }
 
-/* Chevron till höger för Main Nav Primary */
 .chevron::after {
   display: inline-block;
   width: 10px;
@@ -265,7 +256,6 @@ p.lead {
   transform: translateX(2px) scale(1.2);
 }
 
-/* Pil till höger för textlänkar */
 .arrow-right::after {
   content: " \1F806";
   display: inline-block;
@@ -277,12 +267,10 @@ p.lead {
   transform: translateX(5px) scale(1.3);
 }
 
-/* Underline on hover för Footer Nav */
 .footer-nav .nav-list .nav-item:hover {
   text-decoration: underline solid var(--clr-text-accent-1) 1px;
 }
 
-/* Tillgänglighet Kivra Brand Color Overwrite Bootstrap */
 a:focus-visible,
 .form-control:focus-visible,
 .nav-link:focus-visible,
@@ -299,7 +287,6 @@ video:focus-visible,
   outline: 3px solid var(--clr-brand);
 }
 
-/* Button */
 .btn span {
   font-size: var(--fs-400);
   font-weight: var(--fw-bold);
@@ -323,7 +310,6 @@ video:focus-visible,
   padding: 0.5em 1.3em;
 }
 
-/* Primär knapp för brand bakgrund */
 .btn.btn-primary:where(a, button) {
   background-color: var(--clr-bg-accent-2);
   color: var(--clr-text-accent-1);
@@ -335,7 +321,6 @@ video:focus-visible,
   color: var(--clr-text-accent-1);
 }
 
-/* Sekundär knapp för ljusgrön bakgrund */
 .btn.btn-secondary:where(a, button) {
   background-color: var(--clr-text-accent-1);
   color: var(--clr-bg-accent-2);
@@ -347,7 +332,6 @@ video:focus-visible,
   color: var(--clr-bg-accent-2);
 }
 
-/* Outline Light Footer */
 .btn-btn-outline-light:where(button) {
   border-color: var(--clr-text-accent-1);
   color: var(--clr-text-accent-1);
@@ -360,7 +344,6 @@ video:focus-visible,
   box-shadow: inset 0 0 0 1px var(--clr-text-accent-1);
 }
 
-/* Layout */
 section {
   padding: 4rem 0;
 }
@@ -433,7 +416,6 @@ section {
   margin-top: auto;
 }
 
-/* Footer inställningar */
 .footer {
   border-top-left-radius: var(--rds);
   border-top-right-radius: var(--rds);

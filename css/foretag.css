@@ -15,7 +15,6 @@ p.lead {
   color: var(--clr-text-white);
 }
 
-/* Underline on hover för Main Nav Primary */
 .main-nav .nav-primary .nav-link:hover {
   border-bottom: 3px solid var(--clr-text-white);
 }
@@ -28,19 +27,16 @@ p.lead {
   background-image: url(../assets/image/business-hero-background.webp);
 }
 
-/* Chevron color till höger för Main Nav Primary */
 .chevron::after {
   content: url("data:image/svg+xml,%3Csvg viewBox='0 0 600 600' xmlns='http://www.w3.org/2000/svg'%3E%3Cline stroke='white' stroke-width='60' x1='80' x2='320' y1='80' y2='320' stroke-linecap='round' /%3E%3Cline stroke='white' stroke-width='60' x1='560' x2='320' y1='80' y2='320' stroke-linecap='round' /%3E%3C/svg%3E");
 }
 
-/* Outline Light Header Main Nav */
 .btn.btn-outline-light:where(a):hover,
 .btn.btn-outline-light:where(a):focus-visible {
   background-color: var(--clr-text-regular);
   color: var(--clr-text-accent-1);
 }
 
-/* Outline Dark Article Företag */
 .btn.btn-outline-dark:where(a):hover,
 .btn.btn-outline-dark:where(a):focus-visible {
   background-color: transparent;

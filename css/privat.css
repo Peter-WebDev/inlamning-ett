@@ -15,7 +15,6 @@ p.lead {
   background-color: var(--clr-bg-regular);
 }
 
-/* Underline hover för Main Nav Primary */
 .main-nav .nav-primary .nav-link:hover {
   border-bottom: 3px solid var(--clr-brand);
 }
@@ -24,7 +23,6 @@ p.lead {
   background-image: url(../assets/image/dog-hero-background_003.webp);
 }
 
-/* Chevron color till höger för Main Nav Primary */
 .chevron::after {
   content: url("data:image/svg+xml,%3Csvg viewBox='0 0 600 600' xmlns='http://www.w3.org/2000/svg'%3E%3Cline stroke='black' stroke-width='60' x1='80' x2='320' y1='80' y2='320' stroke-linecap='round' /%3E%3Cline stroke='black' stroke-width='60' x1='560' x2='320' y1='80' y2='320' stroke-linecap='round' /%3E%3C/svg%3E");
 }
